@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Matt",
+      "password": "1234"
+    }
+  ],
+  "shoes": [
+    {
+      "id": 1,
+      "brand": "nike",
+      "model": "ghosts"
+    }
+  ],
+  "races": {
+    "id": 1,
+    "raceName": "Jingle Bell 5K"
+  }
+}
