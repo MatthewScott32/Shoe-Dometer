@@ -1,5 +1,5 @@
 import React, { useState, Component } from 'react';
-import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+import { Nav, NavItem, NavLink } from 'reactstrap';
 
 class NavBar extends Component  {
     render() {
@@ -7,10 +7,10 @@ class NavBar extends Component  {
         <div>
         <Nav tabs>
             <NavItem>
-            <NavLink href="#">Home</NavLink>
+            <NavLink className="nav-link" href="/">Home</NavLink>
             </NavItem>
             <NavItem>
-            <NavLink href="#">Current Shoe</NavLink>
+            <NavLink className="nav-link" href="/current-shoes">Current Shoes</NavLink>
             </NavItem>
             <NavItem>
             <NavLink href="#">Shoes</NavLink>
@@ -19,7 +19,7 @@ class NavBar extends Component  {
             <NavLink href="#">Races</NavLink>
             </NavItem>
             <NavItem>
-            <NavLink href="#">Login</NavLink>
+            <NavLink className="nav-link" href="/login">Login</NavLink>
             </NavItem>
             <NavItem>
             <NavLink href="#">Registration</NavLink>
