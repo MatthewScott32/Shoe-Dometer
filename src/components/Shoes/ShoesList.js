@@ -13,7 +13,6 @@ class ShoesList extends Component {
             this.setState({
                 shoes: shoesArray
             })
-            console.log("shoes as state", this.state.shoes)
         })
     }
 
@@ -28,8 +27,8 @@ class ShoesList extends Component {
             <ShoesCard
                key={shoe.id}
                shoe={shoe}
-         //    deleteShoe={this.deleteShoe}
                {...this.props}
+         //    deleteShoe={this.deleteShoe}
                />
                 )}
           {/* </div> */}

@@ -4,6 +4,7 @@ import Home from './Home/Home'
 import Login from './Auth/Login'
 import CurrentShoes from './CurrentShoes/CurrentShoe'
 import ShoesList from "./Shoes/ShoesList";
+import RacesList from "./Races/RacesList";
 
 
 
@@ -23,6 +24,9 @@ export default class ApplicationViews extends Component {
         }} />
         <Route exact path="/shoes" render={props => {
                 return <ShoesList {...props} />
+         }} />
+           <Route exact path="/races" render={props => {
+                return <RacesList {...props} />
          }} />
          </>
        )

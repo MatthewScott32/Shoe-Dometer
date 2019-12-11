@@ -9,7 +9,7 @@ class ShoesCard extends Component {
             <div>
                 <div className="card">
                     <picture>
-                        <img src={this.props.shoe.image} alt="Shoes"/>
+                        <img src={this.props.shoe.image}/>
                     </picture>
                     <p>Brand:{this.props.shoe.brand}</p>
                     <p>Model:{this.props.shoe.model}</p>
