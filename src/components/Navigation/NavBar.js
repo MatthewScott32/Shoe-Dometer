@@ -13,7 +13,7 @@ class NavBar extends Component  {
             <NavLink className="nav-link" href="/current-shoes">Current Shoes</NavLink>
             </NavItem>
             <NavItem>
-            <NavLink href="#">Shoes</NavLink>
+            <NavLink className="nav-link" href="/shoes">Shoes</NavLink>
             </NavItem>
             <NavItem>
             <NavLink href="#">Races</NavLink>
