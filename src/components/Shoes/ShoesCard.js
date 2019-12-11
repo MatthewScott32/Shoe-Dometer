@@ -9,19 +9,19 @@ class ShoesCard extends Component {
             <div>
                 <div className="card">
                     <picture>
-                        <img src={this.props.image} alt="Shoes"/>
+                        <img src={this.props.shoe.image} alt="Shoes"/>
                     </picture>
-                    <p>Brand:{this.props.brand}</p>
-                    <p>Model:{this.props.model}</p>
-                    <p>Size:{this.props.size}</p>
-                    <p>Date of Purchase:{this.props.dateOfPurchase}</p>
-                    <p>Mileage:{this.props.mileage}</p>
-                    <p>Injuries:{this.props.injuries}</p>
-                    <p>Condition:{this.props.condition}</p>
-                    <p>Trail, Road or Both:{this.props.trailRoadBoth}</p>
-                    <p>Weight:{this.props.weight}</p>
-                    <p>Races Used:{this.props.racesUsed}</p>
-                    <p>Current:{this.props.current}</p>
+                    <p>Brand:{this.props.shoe.brand}</p>
+                    <p>Model:{this.props.shoe.model}</p>
+                    <p>Size:{this.props.shoe.size}</p>
+                    <p>Date of Purchase:{this.props.shoe.dateOfPurchase}</p>
+                    <p>Mileage:{this.props.shoe.mileage}</p>
+                    <p>Injuries:{this.props.shoe.injuries}</p>
+                    <p>Condition:{this.props.shoe.condition}</p>
+                    <p>Trail, Road or Both:{this.props.shoe.trailRoadBoth}</p>
+                    <p>Weight:{this.props.shoe.weight}</p>
+                    <p>Races Used:{this.props.shoe.racesUsed}</p>
+                    <p>Current:{this.props.shoe.current}</p>
                 </div>
             </div>
         )
