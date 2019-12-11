@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import Home from './Home/Home'
 import Login from './Auth/Login'
 import CurrentShoes from './CurrentShoes/CurrentShoe'
+import ShoesList from "./Shoes/ShoesList";
+
 
 
 
@@ -19,7 +21,10 @@ export default class ApplicationViews extends Component {
           <Route exact path="/current-shoes" render={(props) => {
           return <CurrentShoes />
         }} />
-        </>
-     )
+        <Route exact path="/shoes" render={props => {
+                return <ShoesList {...props} />
+         }} />
+         </>
+       )
+     }
    }
-}
