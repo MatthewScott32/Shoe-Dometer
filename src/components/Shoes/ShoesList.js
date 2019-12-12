@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ShoesCard from './ShoesCard'
-import ShoeManager from '../../modules/ShoeManager'
+import ShoesManager from '../../modules/ShoesManager'
 
 class ShoesList extends Component {
     state = {
@@ -8,7 +8,7 @@ class ShoesList extends Component {
     }
 
     componentDidMount(){
-        ShoeManager.getAll()
+        ShoesManager.getAll()
         .then((shoesArray) => {
             this.setState({
                 shoes: shoesArray
@@ -19,19 +19,19 @@ class ShoesList extends Component {
     render() {
     return(
         <React.Fragment>
-         {/* <section className="section-content">
+         <section className="section-content">
              <button type="button" className="btn" onClick={() => {this.props.history.push("/shoes/new")}}>Add Shoes</button>
          </section>
-          <div className="container-cards"> */}
+          <div className="container-cards">
             {this.state.shoes.map(shoe =>
             <ShoesCard
                key={shoe.id}
                shoe={shoe}
                {...this.props}
-         //    deleteShoe={this.deleteShoe}
+            deleteShoe={this.deleteShoe}
                />
                 )}
-          {/* </div> */}
+          </div>
         </React.Fragment>
     )
   }
