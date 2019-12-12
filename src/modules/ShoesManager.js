@@ -25,7 +25,7 @@ export default {
     },
 
     update(editedShoe) {                                       
-        return fetch(`${remoteURL}/events/${editedShoe.id}`, {
+        return fetch(`${remoteURL}/shoes/${editedShoe.id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json"

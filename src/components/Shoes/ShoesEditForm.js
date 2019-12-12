@@ -30,7 +30,7 @@ class ShoesEditForm extends Component {
         evt.preventDefault();
             this.setState({ loadingStatus: true});
             const editedShoes = {
-                id: this.props.match.params.shoeId,
+                id: this.props.match.params.shoesId,
                 // image: this.state.image,
                 brand: this.state.brand,
                 model: this.state.model,
