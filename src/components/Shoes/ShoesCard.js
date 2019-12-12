@@ -23,6 +23,7 @@ class ShoesCard extends Component {
                     <p><strong>Races Used:</strong> {this.props.shoe.racesUsed}</p>
                     <p><strong>Current:</strong> {this.props.shoe.current}</p>
                     <button type="button" onClick={() => this.props.deleteShoes(this.props.shoe.id)}>Delete</button><br/>
+                    <button type="button" onClick={() => {this.props.history.push(`/shoes/${this.props.shoe.id}/edit`)}}>Edit</button><br/>
                 </div>
             </div>
         )

@@ -5,6 +5,7 @@ import Login from './Auth/Login'
 import CurrentShoes from './CurrentShoes/CurrentShoe'
 import ShoesList from "./Shoes/ShoesList";
 import ShoesForm from "./Shoes/ShoesForm";
+import ShoesEditForm from "./Shoes/ShoesEditForm";
 import RacesList from "./Races/RacesList";
 import RacesForm from "./Races/RacesForm";
 
@@ -34,6 +35,10 @@ export default class ApplicationViews extends Component {
            <Route exact path="/races" render={props => {
                 return <RacesList {...props} />
          }} />
+         <Route path="/shoes/:shoesId(\d+)/edit/" render={props => {
+             return <ShoesEditForm {...props}/>
+         }}
+         />
          <Route path="/races/new" render={props => {
             return <RacesForm {...props} />
           }}
