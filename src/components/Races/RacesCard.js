@@ -8,15 +8,12 @@ class RacesCard extends Component {
         return(
             <div>
                 <div className="card">
-                    <picture>
-                        <img src={this.props.race.image} alt="Races"/>
-                    </picture>
-                    <p>Name:{this.props.race.raceName}</p>
-                    <p>Location:{this.props.race.raceLocation}</p>
-                    <p>Date:{this.props.race.raceDate}</p>
-                    <p>Run Time:{this.props.race.raceTime}</p>
-                    <p>Distance:{this.props.race.distance}</p>
-                    <p>Placement:{this.props.race.condition}</p>
+                    <p>Name: {this.props.race.raceName}</p>
+                    <p>Location: {this.props.race.raceLocation}</p>
+                    <p>Date: {this.props.race.raceDate}</p>
+                    <p>Race Time: {this.props.race.raceTime}</p>
+                    <p>Distance: {this.props.race.distance}</p>
+                    <p>Placement: {this.props.race.placement}</p>
                 </div>
             </div>
         )

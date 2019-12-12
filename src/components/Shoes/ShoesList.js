@@ -19,9 +19,7 @@ class ShoesList extends Component {
     render() {
     return(
         <React.Fragment>
-         <section className="section-content">
-             <button type="button" className="btn" onClick={() => {this.props.history.push("/shoes/new")}}>Add Shoes</button>
-         </section>
+             <button type="button" className="section-content" onClick={() => {this.props.history.push("/shoes/new")}}>Add Shoes</button>
           <div className="container-cards">
             {this.state.shoes.map(shoe =>
             <ShoesCard

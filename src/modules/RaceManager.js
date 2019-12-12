@@ -6,5 +6,14 @@ export default {
     },
     getAll() {
         return fetch(`${remoteURL}/races`).then(result => result.json())
+    },
+    post(newRaces) {
+        return fetch(`${remoteURL}/races`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newRaces)
+        }).then(data => data.json())
     }
 }

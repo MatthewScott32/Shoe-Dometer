@@ -20,19 +20,17 @@ class RacesList extends Component {
     render() {
     return(
         <>
-         {/* <section className="section-content">
-             <button type="button" className="btn" onClick={() => {this.props.history.push("/races/new")}}>Add Race</button>
-         </section>
-          <div className="container-cards"> */}
+          <button type="button" className="section-content" onClick={() => {this.props.history.push("/races/new")}}>Add Race</button>
+          <div className="container-cards">
             {this.state.races.map(race =>
             <RacesCard
                key={race.id}
                race={race}
                {...this.props}
-         //    deleteRace={this.deleteRace}
+            deleteRace={this.deleteRace}
                />
                 )}
-          {/* </div> */}
+          </div>
         </>
     )
   }
