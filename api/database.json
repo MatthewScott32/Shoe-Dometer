@@ -60,7 +60,16 @@
       "raceDate": "2019/12/11",
       "raceTime": "22:43",
       "distance": "5K",
-      "placement": "4"
+      "placement": 4
+    },
+    {
+      "raceName": "Color Run for Rabies Awareness",
+      "raceLocation": "Benton, Ky",
+      "raceDate": "2019-12-12",
+      "raceTime": "22:43",
+      "distance": "3.1 miles",
+      "placement": "3",
+      "id": 2
     }
   ]
 }
