@@ -13,7 +13,8 @@ class RacesCard extends Component {
                     <p>Date: {this.props.race.raceDate}</p>
                     <p>Race Time: {this.props.race.raceTime}</p>
                     <p>Distance: {this.props.race.distance}</p>
-                    <p>Placement: {this.props.race.placement}</p>
+                    <p>Placement: {this.props.race.placement}</p><br/>
+                    <button type="button" onClick={() => this.props.deleteRaces(this.props.race.id)}>Delete</button><br/>
                 </div>
             </div>
         )

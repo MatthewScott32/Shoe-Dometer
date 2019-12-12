@@ -16,17 +16,29 @@ class ShoesList extends Component {
         })
     }
 
+    deleteShoes = id => {
+        ShoesManager.delete(id)
+        .then(() => {
+            ShoesManager.getAll()
+            .then((newShoes) => {
+                this.setState({
+                    shoes: newShoes
+                })
+            })
+        })
+    }
+
     render() {
     return(
         <React.Fragment>
-             <button type="button" className="section-content" onClick={() => {this.props.history.push("/shoes/new")}}>Add Shoes</button>
+          <button type="button" className="section-content" onClick={() => {this.props.history.push("/shoes/new")}}>Add Shoes</button>
           <div className="container-cards">
             {this.state.shoes.map(shoe =>
             <ShoesCard
                key={shoe.id}
                shoe={shoe}
                {...this.props}
-            deleteShoe={this.deleteShoe}
+            deleteShoes={this.deleteShoes}
                />
                 )}
           </div>

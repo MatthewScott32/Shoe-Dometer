@@ -15,5 +15,12 @@ export default {
             },
             body: JSON.stringify(newRaces)
         }).then(data => data.json())
+    },
+
+    delete(id) {
+        return fetch(`http://localhost:5002/races/${id}`,{
+            method: "DELETE"
+        })
+        .then(result => result.json)
     }
 }
