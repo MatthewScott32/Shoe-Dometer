@@ -17,6 +17,18 @@ class RacesList extends Component {
         })
     }
 
+    deleteRaces = id => {
+        RacesManager.delete(id)
+        .then(() => {
+            RacesManager.getAll()
+            .then((newRaces) => {
+                this.setState({
+                    races: newRaces
+                })
+            })
+        })
+    }
+
     render() {
     return(
         <>
@@ -27,7 +39,7 @@ class RacesList extends Component {
                key={race.id}
                race={race}
                {...this.props}
-            deleteRace={this.deleteRace}
+            deleteRaces={this.deleteRaces}
                />
                 )}
           </div>

@@ -15,5 +15,12 @@ export default {
             },
             body: JSON.stringify(newShoes)
         }).then(data => data.json())
+    },
+
+    delete(id) {
+        return fetch(`http://localhost:5002/shoes/${id}`,{
+            method: "DELETE"
+        })
+        .then(result => result.json)
     }
 }

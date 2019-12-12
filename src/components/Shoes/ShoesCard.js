@@ -11,17 +11,18 @@ class ShoesCard extends Component {
                     <picture>
                         <img src={this.props.shoe.image}/>
                     </picture>
-                    <p>Brand:{this.props.shoe.brand}</p>
-                    <p>Model:{this.props.shoe.model}</p>
-                    <p>Size:{this.props.shoe.size}</p>
-                    <p>Date of Purchase:{this.props.shoe.dateOfPurchase}</p>
-                    <p>Mileage:{this.props.shoe.mileage}</p>
-                    <p>Injuries:{this.props.shoe.injuries}</p>
-                    <p>Condition:{this.props.shoe.condition}</p>
-                    <p>Trail, Road or Both:{this.props.shoe.trailRoadBoth}</p>
-                    <p>Weight:{this.props.shoe.weight}</p>
-                    <p>Races Used:{this.props.shoe.racesUsed}</p>
-                    <p>Current:{this.props.shoe.current}</p>
+                    <p><strong>Brand:</strong> {this.props.shoe.brand}</p>
+                    <p><strong>Model:</strong> {this.props.shoe.model}</p>
+                    <p><strong>Size:</strong> {this.props.shoe.size}</p>
+                    <p><strong>Date of Purchase:</strong> {this.props.shoe.dateOfPurchase}</p>
+                    <p><strong>Mileage:</strong> {this.props.shoe.mileage}</p>
+                    <p><strong>Injuries:</strong> {this.props.shoe.injuries}</p>
+                    <p><strong>Condition:</strong> {this.props.shoe.condition}</p>
+                    <p><strong>Trail, Road or Both:</strong> {this.props.shoe.trailRoadBoth}</p>
+                    <p><strong>Weight:</strong> {this.props.shoe.weight}</p>
+                    <p><strong>Races Used:</strong> {this.props.shoe.racesUsed}</p>
+                    <p><strong>Current:</strong> {this.props.shoe.current}</p>
+                    <button type="button" onClick={() => this.props.deleteShoes(this.props.shoe.id)}>Delete</button><br/>
                 </div>
             </div>
         )

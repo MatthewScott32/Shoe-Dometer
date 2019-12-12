@@ -21,34 +21,6 @@
       "weight": "light",
       "racesUsed": "Murray 5k",
       "current": "True"
-    },
-    {
-      "brand": "reebok",
-      "model": "jam",
-      "size": "9",
-      "dateOfPurchase": "2019-12-12",
-      "mileage": "5",
-      "injuries": "none",
-      "condition": "good-5",
-      "trailRoadBoth": "Both",
-      "weight": "Medium",
-      "racesUsed": "none",
-      "current": "on",
-      "id": 2
-    },
-    {
-      "brand": "puma",
-      "model": "slam",
-      "size": "10",
-      "dateOfPurchase": "2019-12-11",
-      "mileage": "2",
-      "injuries": "blister",
-      "condition": "fair-2",
-      "trailRoadBoth": "Road",
-      "weight": "Medium",
-      "racesUsed": "none",
-      "current": "",
-      "id": 3
     }
   ],
   "races": [
@@ -61,15 +33,6 @@
       "raceTime": "22:43",
       "distance": "5K",
       "placement": 4
-    },
-    {
-      "raceName": "Color Run for Rabies Awareness",
-      "raceLocation": "Benton, Ky",
-      "raceDate": "2019-12-12",
-      "raceTime": "22:43",
-      "distance": "3.1 miles",
-      "placement": "3",
-      "id": 2
     }
   ]
 }
