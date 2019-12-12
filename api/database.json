@@ -21,18 +21,46 @@
       "weight": "light",
       "racesUsed": "Murray 5k",
       "current": "True"
+    },
+    {
+      "brand": "reebok",
+      "model": "jam",
+      "size": "9",
+      "dateOfPurchase": "2019-12-12",
+      "mileage": "5",
+      "injuries": "none",
+      "condition": "good-5",
+      "trailRoadBoth": "Both",
+      "weight": "Medium",
+      "racesUsed": "none",
+      "current": "on",
+      "id": 2
+    },
+    {
+      "brand": "puma",
+      "model": "slam",
+      "size": "10",
+      "dateOfPurchase": "2019-12-11",
+      "mileage": "2",
+      "injuries": "blister",
+      "condition": "fair-2",
+      "trailRoadBoth": "Road",
+      "weight": "Medium",
+      "racesUsed": "none",
+      "current": "",
+      "id": 3
     }
   ],
-  "races":[ 
-  {
-    "id": 1,
-    "shoeId": 1,
-    "raceName": "Jingle Bell 5K",
-    "raceLocation": "Murray,Ky",
-    "raceDate": "2019/12/11",
-    "raceTime": "22:43",
-    "distance": "5K",
-    "placement": "4"
-  }
- ]
+  "races": [
+    {
+      "id": 1,
+      "shoeId": 1,
+      "raceName": "Jingle Bell 5K",
+      "raceLocation": "Murray,Ky",
+      "raceDate": "2019/12/11",
+      "raceTime": "22:43",
+      "distance": "5K",
+      "placement": "4"
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import RacesCard from './RacesCard'
-import RaceManager from '../../modules/RaceManager'
+import RacesManager from '../../modules/RaceManager'
 
 class RacesList extends Component {
     state = {
@@ -8,7 +8,7 @@ class RacesList extends Component {
     }
 
     componentDidMount(){
-        RaceManager.getAll()
+        RacesManager.getAll()
         .then((racesArray) => {
             this.setState({
                 races: racesArray
