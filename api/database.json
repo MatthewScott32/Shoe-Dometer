@@ -4,6 +4,11 @@
       "id": 1,
       "userName": "Matt",
       "password": "1234"
+    },
+    {
+      "userName": "mattScott32",
+      "password": "1111",
+      "id": 2
     }
   ],
   "shoes": [
@@ -24,13 +29,12 @@
   "races": [
     {
       "id": 1,
-      "shoeId": 1,
       "raceName": "Jingle Bell 5K",
       "raceLocation": "Murray,Ky",
       "raceDate": "2019/12/11",
       "raceTime": "22:43",
       "distance": "5K",
-      "placement": 4
+      "placement": "3"
     }
   ]
 }
