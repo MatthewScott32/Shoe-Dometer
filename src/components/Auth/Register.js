@@ -19,12 +19,13 @@ class Registration extends Component {
     stateToChange[evt.target.id] = evt.target.value
     this.setState(stateToChange)
   }
-  constructNewUser = evt => {
-    evt.preventDefault();
-    if(this.state.email === "" || this.state.password === "" || this.state.confirmPass !== this.state.password) {
+  constructNewUser = event => {
+    // event.preventDefault();
+    if(this.state.userName === "" || this.state.password === "" || this.state.confirmPass ==="")
       window.alert("Please Complete Registration");
-    } else{
-      this.setState({ loadinStatus: true });
+    else if(this.state.confirmPass !== this.state.password) {window.alert("Password and Confirmation Do Not Match" )}
+    else{
+      this.setState({ loadingStatus: true });
       const user = {
         userName: this.state.userName,
         password: this.state.password,
@@ -32,23 +33,29 @@ class Registration extends Component {
 
       };
       UsersManager.post(user)
-      .then(() => this.props.history.push("/users"))
+      .then(() => {
+        this.props.setUser({
+            userName: this.state.userName,
+            password: this.state.password
+        })
+        this.props.history.push("/home")
+       })
     }
   }
 
   handleRegistration = (event) => {
     event.preventDefault()
-    this.props.newUser({
+    this.constructNewUser({
       userName: this.state.userName,
       password: this.state.password
     })
-    this.props.history.push("/users");
+    this.props.history.push("/home");
 
   }
 
   render() {
     return (
-      <form onSubmit={this.handleRegistration}>
+      <form >
         <fieldset>
             <h1>Welcome to Shoe-Dometer!</h1>
           <h3>Please Sign In</h3>
@@ -73,7 +80,7 @@ class Registration extends Component {
             
 
           </div>
-          <button type="submit" disabled={this.state.loadingStatus} onClick={this.constructNewUser}>
+          <button type="submit" disabled={this.state.loadingStatus} onClick={this.handleRegistration}>
             Register
             </button>
         </fieldset>
