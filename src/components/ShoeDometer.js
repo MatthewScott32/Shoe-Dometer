@@ -5,8 +5,8 @@ import "./ShoeDometer.css";
 import Login from "./Auth/Login";
 
 
-localStorage.setItem("currentUser", 1)
-let i = localStorage.getItem("currentUser", 1)
+// localStorage.setItem("currentUser", 1)
+// let i = localStorage.getItem("currentUser", 1)
 
 class ShoeDometer extends Component {
 

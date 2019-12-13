@@ -34,11 +34,19 @@ export default class ApplicationViews extends Component {
         }}
         />
           <Route exact path="/current-shoes" render={(props) => {
-          return <CurrentShoes />
+               if (this.props.isAuthenticated()) {
+                return <CurrentShoes {...props} />
+            } else {
+                return <Redirect to="/login" />
+            }
         }} 
         />
         <Route exact path="/shoes" render={props => {
+             if (this.props.isAuthenticated()) {
                 return <ShoesList {...props} />
+            } else {
+                return <Redirect to="/login" />
+            }
          }} 
          />
             <Route path="/shoes/new" render={props => {
@@ -46,7 +54,11 @@ export default class ApplicationViews extends Component {
         }}
         />
            <Route exact path="/races" render={props => {
-                return <RacesList {...props} />
+                if (this.props.isAuthenticated()) {
+                    return <RacesList {...props} />
+                } else {
+                    return <Redirect to="/login" />
+                }
          }} 
          />
          <Route path="/shoes/:shoesId(\d+)/edit/" render={props => {
