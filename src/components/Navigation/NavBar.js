@@ -7,7 +7,7 @@ class NavBar extends Component  {
         <div>
         <Nav tabs>
             <NavItem>
-            <NavLink className="nav-link" href="/">Home</NavLink>
+            <NavLink className="nav-link" href="/home">Home</NavLink>
             </NavItem>
             <NavItem>
             <NavLink className="nav-link" href="/current-shoes">Current Shoes</NavLink>
@@ -22,7 +22,7 @@ class NavBar extends Component  {
             <NavLink className="nav-link" href="/login">Login</NavLink>
             </NavItem>
             <NavItem>
-            <NavLink href="#">Registration</NavLink>
+            <NavLink className="nav-link" href="/register">Registration</NavLink>
             </NavItem>
             <NavItem>
             <NavLink href="#">Logout</NavLink>

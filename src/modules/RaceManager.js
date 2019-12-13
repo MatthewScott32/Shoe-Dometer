@@ -22,5 +22,15 @@ export default {
             method: "DELETE"
         })
         .then(result => result.json)
-    }
+    },
+    
+    update(editedRace) {                                       
+        return fetch(`${remoteURL}/races/${editedRace.id}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(editedRace)
+        }).then(data => data.json());
+      }
 }

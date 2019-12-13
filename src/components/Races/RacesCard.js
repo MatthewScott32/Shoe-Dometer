@@ -15,6 +15,7 @@ class RacesCard extends Component {
                     <p>Distance: {this.props.race.distance}</p>
                     <p>Placement: {this.props.race.placement}</p><br/>
                     <button type="button" onClick={() => this.props.deleteRaces(this.props.race.id)}>Delete</button><br/>
+                    <button type="button" onClick={() => {this.props.history.push(`/races/${this.props.race.id}/edit`)}}>Edit</button><br/>
                 </div>
             </div>
         )
