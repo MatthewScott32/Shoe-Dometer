@@ -2,7 +2,7 @@ import { Route, withRouter, Redirect } from "react-router-dom";
 import React, { Component } from "react";
 import Home from './Home/Home'
 import Login from './Auth/Login'
-import CurrentShoes from './CurrentShoes/CurrentShoe'
+import CurrentShoes from './CurrentShoes/CurrentShoes'
 import ShoesList from "./Shoes/ShoesList";
 import ShoesForm from "./Shoes/ShoesForm";
 import ShoesEditForm from "./Shoes/ShoesEditForm";

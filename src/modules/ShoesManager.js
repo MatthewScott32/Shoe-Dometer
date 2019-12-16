@@ -32,5 +32,5 @@ export default {
           },
           body: JSON.stringify(editedShoe)
         }).then(data => data.json());
-      }
+      },
 }

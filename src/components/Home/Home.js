@@ -8,7 +8,7 @@ class Home extends Component {
         Welcome to Shoe-Dometer!
       </h1>
       <h2>
-          Tracking Your Miles As You Make Tracks
+          Tracking Your Miles While You Make Tracks
       </h2>
       </>
     )

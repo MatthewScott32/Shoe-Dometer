@@ -79,32 +79,63 @@
       "userName": "julian",
       "password": "4567",
       "id": 16
+    },
+    {
+      "userName": "Rose",
+      "password": "420",
+      "id": 17
     }
   ],
   "shoes": [
     {
-      "id": 1,
-      "brand": "Nike",
-      "model": "Ghosts",
+      "id": 7,
+      "brand": "puma",
+      "model": "Bam",
+      "size": "10",
+      "dateOfPurchase": "2019-12-17",
+      "mileage": "2",
+      "injuries": "none",
+      "trailRoadBoth": "Both",
+      "weight": "Medium",
+      "racesUsed": "murray 5k",
+      "current": false
+    },
+    {
+      "id": 8,
+      "brand": "reebok",
+      "model": "Yo",
       "size": "9",
-      "dateOfPurchase": "2019/12/10",
-      "mileage": 20,
-      "injuries": "Left Big-Toe Blister",
-      "trailRoadBoth": "Road",
-      "weight": "light",
-      "racesUsed": "Murray 5k",
-      "current": "True"
+      "dateOfPurchase": "2019-12-17",
+      "mileage": "14",
+      "injuries": "none",
+      "trailRoadBoth": "Trail",
+      "weight": "Medium",
+      "racesUsed": "murray 5k",
+      "current": true
+    },
+    {
+      "id": 10,
+      "brand": "adidas",
+      "model": "fudge",
+      "size": "11",
+      "dateOfPurchase": "2019-12-05",
+      "mileage": "19",
+      "injuries": "blister",
+      "trailRoadBoth": "Trail",
+      "weight": "Medium",
+      "racesUsed": "none",
+      "current": false
     }
   ],
   "races": [
     {
-      "id": 1,
-      "raceName": "Jingle Bell 5K",
-      "raceLocation": "Murray,Ky",
-      "raceDate": "2019/12/11",
+      "raceName": "Color Run for Rabies Awareness",
+      "raceLocation": "Benton, Ky",
+      "raceDate": "2019-12-27",
       "raceTime": "22:43",
-      "distance": "5K",
-      "placement": "3"
+      "distance": "3.1 miles",
+      "placement": "4",
+      "id": 2
     }
   ]
 }

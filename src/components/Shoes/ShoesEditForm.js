@@ -16,18 +16,24 @@ class ShoesEditForm extends Component {
         trailRoadBoth: "",
         weight: "",
         racesUsed: "",
-        current: "",
+        current: true,
         loadingStatus: true,
     };
 
-    handleFieldChange = evt => {
+    handleFieldChange = event => {
         const stateToChange = {};
-        stateToChange[evt.target.id] = evt.target.value;
+        stateToChange[event.target.id] = event.target.value;
         this.setState(stateToChange);
     };
 
-    updateExistingShoes = evt => {
-        evt.preventDefault();
+    handleCheckbox = event => {
+        const stateToChange = {};
+        stateToChange[event.target.id] = event.target.checked
+        this.setState(stateToChange)
+    }
+
+    updateExistingShoes = event => {
+        event.preventDefault();
             this.setState({ loadingStatus: true});
             const editedShoes = {
                 id: this.props.match.params.shoesId,
@@ -67,7 +73,6 @@ class ShoesEditForm extends Component {
                         current: shoes.current,
                         loadingStatus: false,
                     })
-                    console.log(this.state)
                 })
             }
 
@@ -116,8 +121,8 @@ class ShoesEditForm extends Component {
                     <h3 htmlFor="condition">Condition</h3>
                     <input type="input" required className="form-control"
                     onChange={this.handleFieldChange}
-                    id="dateOfPurchase"
-                    value={this.state.dateOfPurchase}/>
+                    id="condition"
+                    value={this.state.condition}/>
 
                     <h3 htmlFor="trailRoadBoth">Trail, Road, Both</h3>
                     <select type="select" required className="form-control"
@@ -149,10 +154,12 @@ class ShoesEditForm extends Component {
 
                     <h3 htmlFor="current">Current</h3>
                     <input type="checkbox" required className="form-control"
-                    onChange={this.handleFieldChange}
+                    onChange={this.handleCheckbox}
                     id="current"
-                    value={this.state.current}/>
+                    value={this.state.current} 
+                    checked={this.state.current} />
                    </div>
+
                    <div className="alignRight">
                     <button
                     type="button" disabled={this.state.loadingStatus}

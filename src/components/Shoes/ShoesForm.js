@@ -16,7 +16,7 @@ class ShoesForm extends Component {
         trailRoadBoth: "",
         weight: "",
         racesUsed: "",
-        current: "",
+        current: true,
         loadingStatus: false,
     };
 
@@ -24,6 +24,12 @@ class ShoesForm extends Component {
         const stateTochange = {};
         stateTochange[evt.target.id] = evt.target.value;
         this.setState(stateTochange);
+    };
+
+    handleCheckbox = e => {
+        const stateToChange = {};
+        stateToChange[e.target.id] = e.target.checked
+        this.setState(stateToChange)
     };
 
     constructNewShoes = evt => {
@@ -102,7 +108,7 @@ class ShoesForm extends Component {
                     <h3>Races Used</h3>
                     <input type="input" id="racesUsed" onChange={this.handleFieldChange}/>
                     <h3>Current</h3>
-                    <input type="checkbox" id="current" onChange={this.handleFieldChange}/>
+                    <input type="checkbox" id="current" onChange={this.handleCheckbox} checked={this.state.current}/>
                 </section>
                 <button id="saveShoes" disabled={this.state.loadingStatus} onClick={this.constructNewShoes}>Save Pair</button>
                </article>
