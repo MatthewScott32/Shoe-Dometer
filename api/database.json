@@ -123,46 +123,43 @@
       "id": 2
     },
     {
-      "userId": {
-        "userName": "Chase",
-        "password": "3333"
-      },
-      "brand": "reebok",
-      "model": "jam",
-      "size": "12",
+      "userId": 4,
+      "brand": "nike",
+      "model": "Yo",
+      "size": "11.5",
       "dateOfPurchase": "2019-12-17",
       "mileage": "3",
-      "injuries": "none",
-      "condition": "good-5",
+      "injuries": "Broken leg",
+      "condition": "tearing at toe-12 miles",
       "trailRoadBoth": "Trail",
       "weight": "Medium",
-      "racesUsed": "Nashville half",
+      "racesUsed": "Nashville Full",
       "current": false,
       "id": 3
     }
   ],
   "races": [
     {
-      "id": 1,
-      "userId": null,
-      "raceName": "Tree",
-      "raceLocation": "Top",
-      "raceDate": "2019-12-17",
-      "raceTime": "22:45",
-      "distance": "3.1 miles",
-      "placement": "3",
-      "shoeId": "2"
-    },
-    {
-      "id": 2,
-      "userId": null,
+      "userId": 1,
       "raceName": "Chase Chase",
       "raceLocation": "Benton, Ky",
       "raceDate": "2019-12-17",
-      "raceTime": "22:43",
+      "raceTime": "Assholes",
       "distance": "6",
+      "placement": "2",
+      "shoeId": 2,
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "raceName": "Buddhist Run for Buddha",
+      "raceLocation": "Building",
+      "raceDate": "2019-12-17",
+      "raceTime": "23:00",
+      "distance": "3.1 miles",
       "placement": "3",
-      "shoeId": "2"
+      "shoeId": 2,
+      "id": 2
     }
   ]
 }

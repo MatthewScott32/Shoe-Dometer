@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import RacesManager from '../../modules/RaceManager';
 import ShoesManager from '../../modules/ShoesManager';
-
 // import './RacesForm.css'
 
 class RacesForm extends Component {
@@ -33,18 +32,18 @@ class RacesForm extends Component {
             window.alert("Form Incomplete") 
         } else {
             this.setState({ loadingStatus: true});
-            const currentUser = JSON.parse(localStorage.getItem("currentUser"))
+            const currentUser = JSON.parse(localStorage.getItem("credentials"))
             const races = {
-                userId: currentUser,
+                userId: currentUser.id,
                 raceName: this.state.raceName,
                 raceLocation: this.state.raceLocation,
                 raceDate: this.state.raceDate,
                 raceTime: this.state.raceTime,
                 distance: this.state.distance,
                 placement: this.state.placement,
-                shoeId: this.state.shoeId
+                shoeId: Number(this.state.shoeId)
             };
-
+            console.log(currentUser)
             RacesManager.post(races)
             .then(() => this.props.history.push("/races"));
         }

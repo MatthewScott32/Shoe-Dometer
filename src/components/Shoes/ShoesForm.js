@@ -43,9 +43,9 @@ class ShoesForm extends Component {
             window.alert("Form Incomplete") 
         } else {
             this.setState({ loadingStatus: true});
-            const currentUser = JSON.parse(localStorage.getItem("currentUser"))
+            const currentUser = JSON.parse(localStorage.getItem("credentials"))
             const shoes = {
-                userId: currentUser,
+                userId: currentUser.id,
                 // image: this.state.image,
                 brand: this.state.brand,
                 model: this.state.model,
