@@ -35,8 +35,10 @@ class ShoesEditForm extends Component {
     updateExistingShoes = event => {
         event.preventDefault();
             this.setState({ loadingStatus: true});
+            const currentUser = JSON.parse(localStorage.getItem("currentUser"))
             const editedShoes = {
                 id: this.props.match.params.shoesId,
+                userId: currentUser,
                 // image: this.state.image,
                 brand: this.state.brand,
                 model: this.state.model,

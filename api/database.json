@@ -84,58 +84,85 @@
       "userName": "Rose",
       "password": "420",
       "id": 17
+    },
+    {
+      "userName": "Dad",
+      "password": "6464",
+      "id": 18
     }
   ],
   "shoes": [
     {
-      "id": 7,
+      "userId": 1,
       "brand": "puma",
+      "model": "Bam",
+      "size": "9",
+      "dateOfPurchase": "2019-12-17",
+      "mileage": "5",
+      "injuries": "blister",
+      "condition": "good-5",
+      "trailRoadBoth": "Trail",
+      "weight": "Light",
+      "racesUsed": "murray 5k",
+      "current": true,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "brand": "adidas",
       "model": "Bam",
       "size": "10",
       "dateOfPurchase": "2019-12-17",
-      "mileage": "2",
-      "injuries": "none",
+      "mileage": "4",
+      "injuries": "Broken Arm",
+      "condition": "tearing at toe-12 miles",
       "trailRoadBoth": "Both",
       "weight": "Medium",
-      "racesUsed": "murray 5k",
-      "current": false
+      "racesUsed": "hardrock half",
+      "current": false,
+      "id": 2
     },
     {
-      "id": 8,
+      "userId": {
+        "userName": "Chase",
+        "password": "3333"
+      },
       "brand": "reebok",
-      "model": "Yo",
-      "size": "9",
+      "model": "jam",
+      "size": "12",
       "dateOfPurchase": "2019-12-17",
-      "mileage": "14",
+      "mileage": "3",
       "injuries": "none",
+      "condition": "good-5",
       "trailRoadBoth": "Trail",
       "weight": "Medium",
-      "racesUsed": "murray 5k",
-      "current": true
-    },
-    {
-      "id": 10,
-      "brand": "adidas",
-      "model": "fudge",
-      "size": "11",
-      "dateOfPurchase": "2019-12-05",
-      "mileage": "19",
-      "injuries": "blister",
-      "trailRoadBoth": "Trail",
-      "weight": "Medium",
-      "racesUsed": "none",
-      "current": false
+      "racesUsed": "Nashville half",
+      "current": false,
+      "id": 3
     }
   ],
   "races": [
     {
-      "raceName": "Color Run for Rabies Awareness",
-      "raceLocation": "Benton, Ky",
-      "raceDate": "2019-12-27",
-      "raceTime": "22:43",
+      "id": 1,
+      "userId": null,
+      "raceName": "Tree",
+      "raceLocation": "Top",
+      "raceDate": "2019-12-17",
+      "raceTime": "22:45",
       "distance": "3.1 miles",
-      "placement": "4",
-      "id": 2
+      "placement": "3",
+      "shoeId": "2"
+    },
+    {
+      "id": 2,
+      "userId": null,
+      "raceName": "Chase Chase",
+      "raceLocation": "Benton, Ky",
+      "raceDate": "2019-12-17",
+      "raceTime": "22:43",
+      "distance": "6",
+      "placement": "3",
+      "shoeId": "2"
     }
   ]
 }

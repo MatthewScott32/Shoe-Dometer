@@ -5,6 +5,7 @@ import ShoesManager from '../../modules/ShoesManager';
 class ShoesForm extends Component {
     
     state ={
+        userId: "",
         // image: "",
         brand: "",
         model: "",
@@ -42,7 +43,9 @@ class ShoesForm extends Component {
             window.alert("Form Incomplete") 
         } else {
             this.setState({ loadingStatus: true});
+            const currentUser = JSON.parse(localStorage.getItem("currentUser"))
             const shoes = {
+                userId: currentUser,
                 // image: this.state.image,
                 brand: this.state.brand,
                 model: this.state.model,
@@ -56,21 +59,20 @@ class ShoesForm extends Component {
                 racesUsed: this.state.racesUsed,
                 current: this.state.current
             };
-
             ShoesManager.post(shoes)
             .then(() => this.props.history.push("/shoes"));
         }
     }
-
-
-        componentDidMount() {
-            ShoesManager.getAll()
-            .then(shoes => this.setState({shoes: shoes}))
-        }
-
-        render() {
-            return (
-          <>
+    
+    
+    componentDidMount() {
+        ShoesManager.getAll()
+        .then(shoes => this.setState({shoes: shoes}))
+    }
+    
+    render() {
+        return (
+            <>
             <div className="card">
              <div className="card-body">
               <article id="newShoesForm"><h1>New Shoes</h1>

@@ -1,11 +1,15 @@
 const remoteURL = "http://localhost:5002"
+// const userAccount = "?userId="
 
 export default {
     get(id) {
         return fetch(`${remoteURL}/races/${id}`).then(result => result.json())
     },
+    // getAllAccountRaces(id) {
+    //     return fetch(`${remoteURL}/races${userAccount}${id}`).then(result => result.json())
+    // },
     getAll() {
-        return fetch(`${remoteURL}/races`).then(result => result.json())
+        return fetch(`${remoteURL}/races?_expand=shoe`).then(result => result.json())
     },
     post(newRaces) {
         return fetch(`${remoteURL}/races`, {

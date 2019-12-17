@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import RacesManager from '../../modules/RaceManager';
+import ShoesManager from '../../modules/ShoesManager';
 // import './RaceForm.css'
 
 class RacesEditForm extends Component {
     
     state ={
+        shoeId: "",
         raceName: "",
         raceLocation: "",
         raceDate: "",
         raceTime: "",
         distance: "",
         placement: "",
+        shoeArray: [],
         loadingStatus: false,
     };
 
@@ -23,15 +26,18 @@ class RacesEditForm extends Component {
     updateExistingRaces = evt => {
         evt.preventDefault();
             this.setState({ loadingStatus: true});
+            const currentUser = JSON.parse(localStorage.getItem("currentUser"))
             const editedRaces = {
                 id: this.props.match.params.racesId,
+                userId: currentUser,
                 // image: this.state.image,
                 raceName: this.state.raceName,
                 raceLocation: this.state.raceLocation,
                 raceDate: this.state.raceDate,
                 raceTime: this.state.raceTime,
                 distance: this.state.distance,
-                placement: this.state.placement
+                placement: this.state.placement,
+                shoeId: this.state.shoeId
             };
 
             RacesManager.update(editedRaces)
@@ -40,6 +46,8 @@ class RacesEditForm extends Component {
             }
 
             componentDidMount() {
+                ShoesManager.getAll()
+                .then(shoes => this.setState({shoeArray: shoes}))
                 RacesManager.get(this.props.match.params.racesId)
                 .then(races => {
                     this.setState({
@@ -49,6 +57,7 @@ class RacesEditForm extends Component {
                         raceTime: races.raceTime,
                         distance: races.distance,
                         placement: races.placement,
+                        shoeId: this.state.shoeId,
                         loadingStatus: false,
                     })
                 })
@@ -96,6 +105,14 @@ class RacesEditForm extends Component {
                     id="placement"
                     value={this.state.placement}/>
                    </div>
+
+                   <h3 htmlFor="placement">Shoes Used</h3>
+                   <select type="select" id="shoeId" onChange={this.handleFieldChange}>
+                        <option value="none">Select</option>
+                        {this.state.shoeArray.map(shoe => {
+                        return <option value={shoe.id}>{shoe.brand}: {shoe.model}</option>
+                        })}
+                    </select><br/><br/>
 
                    <div className="alignRight">
                     <button
