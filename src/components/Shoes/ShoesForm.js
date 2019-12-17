@@ -5,6 +5,7 @@ import ShoesManager from '../../modules/ShoesManager';
 class ShoesForm extends Component {
     
     state ={
+        userId: "",
         // image: "",
         brand: "",
         model: "",
@@ -16,7 +17,7 @@ class ShoesForm extends Component {
         trailRoadBoth: "",
         weight: "",
         racesUsed: "",
-        current: "",
+        current: true,
         loadingStatus: false,
     };
 
@@ -24,6 +25,12 @@ class ShoesForm extends Component {
         const stateTochange = {};
         stateTochange[evt.target.id] = evt.target.value;
         this.setState(stateTochange);
+    };
+
+    handleCheckbox = e => {
+        const stateToChange = {};
+        stateToChange[e.target.id] = e.target.checked
+        this.setState(stateToChange)
     };
 
     constructNewShoes = evt => {
@@ -36,7 +43,9 @@ class ShoesForm extends Component {
             window.alert("Form Incomplete") 
         } else {
             this.setState({ loadingStatus: true});
+            const currentUser = JSON.parse(localStorage.getItem("credentials"))
             const shoes = {
+                userId: currentUser.id,
                 // image: this.state.image,
                 brand: this.state.brand,
                 model: this.state.model,
@@ -50,21 +59,20 @@ class ShoesForm extends Component {
                 racesUsed: this.state.racesUsed,
                 current: this.state.current
             };
-
             ShoesManager.post(shoes)
             .then(() => this.props.history.push("/shoes"));
         }
     }
-
-
-        componentDidMount() {
-            ShoesManager.getAll()
-            .then(shoes => this.setState({shoes: shoes}))
-        }
-
-        render() {
-            return (
-          <>
+    
+    
+    componentDidMount() {
+        ShoesManager.getAll()
+        .then(shoes => this.setState({shoes: shoes}))
+    }
+    
+    render() {
+        return (
+            <>
             <div className="card">
              <div className="card-body">
               <article id="newShoesForm"><h1>New Shoes</h1>
@@ -102,7 +110,7 @@ class ShoesForm extends Component {
                     <h3>Races Used</h3>
                     <input type="input" id="racesUsed" onChange={this.handleFieldChange}/>
                     <h3>Current</h3>
-                    <input type="checkbox" id="current" onChange={this.handleFieldChange}/>
+                    <input type="checkbox" id="current" onChange={this.handleCheckbox} checked={this.state.current}/>
                 </section>
                 <button id="saveShoes" disabled={this.state.loadingStatus} onClick={this.constructNewShoes}>Save Pair</button>
                </article>

@@ -79,32 +79,87 @@
       "userName": "julian",
       "password": "4567",
       "id": 16
+    },
+    {
+      "userName": "Rose",
+      "password": "420",
+      "id": 17
+    },
+    {
+      "userName": "Dad",
+      "password": "6464",
+      "id": 18
     }
   ],
   "shoes": [
     {
-      "id": 1,
-      "brand": "Nike",
-      "model": "Ghosts",
+      "userId": 1,
+      "brand": "puma",
+      "model": "Bam",
       "size": "9",
-      "dateOfPurchase": "2019/12/10",
-      "mileage": 20,
-      "injuries": "Left Big-Toe Blister",
-      "trailRoadBoth": "Road",
-      "weight": "light",
-      "racesUsed": "Murray 5k",
-      "current": "True"
+      "dateOfPurchase": "2019-12-17",
+      "mileage": "5",
+      "injuries": "blister",
+      "condition": "good-5",
+      "trailRoadBoth": "Trail",
+      "weight": "Light",
+      "racesUsed": "murray 5k",
+      "current": true,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "brand": "adidas",
+      "model": "Bam",
+      "size": "10",
+      "dateOfPurchase": "2019-12-17",
+      "mileage": "4",
+      "injuries": "Broken Arm",
+      "condition": "tearing at toe-12 miles",
+      "trailRoadBoth": "Both",
+      "weight": "Medium",
+      "racesUsed": "hardrock half",
+      "current": false,
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "brand": "nike",
+      "model": "Yo",
+      "size": "11.5",
+      "dateOfPurchase": "2019-12-17",
+      "mileage": "3",
+      "injuries": "Broken leg",
+      "condition": "tearing at toe-12 miles",
+      "trailRoadBoth": "Trail",
+      "weight": "Medium",
+      "racesUsed": "Nashville Full",
+      "current": false,
+      "id": 3
     }
   ],
   "races": [
     {
-      "id": 1,
-      "raceName": "Jingle Bell 5K",
-      "raceLocation": "Murray,Ky",
-      "raceDate": "2019/12/11",
-      "raceTime": "22:43",
-      "distance": "5K",
-      "placement": "3"
+      "userId": 1,
+      "raceName": "Chase Chase",
+      "raceLocation": "Benton, Ky",
+      "raceDate": "2019-12-17",
+      "raceTime": "Assholes",
+      "distance": "6",
+      "placement": "2",
+      "shoeId": 2,
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "raceName": "Buddhist Run for Buddha",
+      "raceLocation": "Building",
+      "raceDate": "2019-12-17",
+      "raceTime": "23:00",
+      "distance": "3.1 miles",
+      "placement": "3",
+      "shoeId": 2,
+      "id": 2
     }
   ]
 }

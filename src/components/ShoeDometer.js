@@ -23,6 +23,7 @@ class ShoeDometer extends Component {
         For now, just store the user name and password that
         the customer enters into local storage.
       */
+     console.log(authObj)
       localStorage.setItem(
         "credentials",
         JSON.stringify(authObj)

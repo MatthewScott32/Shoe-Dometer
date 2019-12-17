@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+
 // import "./RacesCard.css"
 // import { Link } from "react-router-dom"
 // import { directive } from "@babel/types"
@@ -14,6 +15,7 @@ class RacesCard extends Component {
                     <p>Race Time: {this.props.race.raceTime}</p>
                     <p>Distance: {this.props.race.distance}</p>
                     <p>Placement: {this.props.race.placement}</p><br/>
+                    <p>Shoes Used: {this.props.race.shoe.brand} {this.props.race.shoe.model}</p>
                     <button type="button" onClick={() => this.props.deleteRaces(this.props.race.id)}>Delete</button><br/>
                     <button type="button" onClick={() => {this.props.history.push(`/races/${this.props.race.id}/edit`)}}>Edit</button><br/>
                 </div>

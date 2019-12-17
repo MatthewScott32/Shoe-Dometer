@@ -23,6 +23,7 @@ class Login extends Component {
         usersArray.map(user => {
             if(user.userName === this.state.userName && user.password === this.state.password){
                 this.props.setUser({
+                    id: user.id,
                     userName: this.state.userName,
                     password: this.state.password
                 })

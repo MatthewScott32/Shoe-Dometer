@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import RacesManager from '../../modules/RaceManager';
+import ShoesManager from '../../modules/ShoesManager';
 // import './RacesForm.css'
 
 class RacesForm extends Component {
     
     state ={
+        userId: "",
+        shoeId: "",
         raceName: "",
         raceLocation: "",
         raceDate: "",
         raceTime: "",
         distance: "",
         placement: "",
+        shoeArray: [],
         loadingStatus: false,
     };
 
@@ -28,15 +32,18 @@ class RacesForm extends Component {
             window.alert("Form Incomplete") 
         } else {
             this.setState({ loadingStatus: true});
+            const currentUser = JSON.parse(localStorage.getItem("credentials"))
             const races = {
+                userId: currentUser.id,
                 raceName: this.state.raceName,
                 raceLocation: this.state.raceLocation,
                 raceDate: this.state.raceDate,
                 raceTime: this.state.raceTime,
                 distance: this.state.distance,
-                placement: this.state.placement
+                placement: this.state.placement,
+                shoeId: Number(this.state.shoeId)
             };
-
+            console.log(currentUser)
             RacesManager.post(races)
             .then(() => this.props.history.push("/races"));
         }
@@ -46,6 +53,8 @@ class RacesForm extends Component {
         componentDidMount() {
             RacesManager.getAll()
             .then(races => this.setState({races: races}))
+            ShoesManager.getAll()
+            .then(shoes => this.setState({shoeArray: shoes}))
         }
 
         render() {
@@ -67,6 +76,12 @@ class RacesForm extends Component {
                     <input type="input" id="distance" onChange={this.handleFieldChange}/>
                     <h3>Placement</h3>
                     <input type="number" id="placement" onChange={this.handleFieldChange}/><br/><br/>
+                    <select type="select" id="shoeId" onChange={this.handleFieldChange}>
+                        <option value="none">Select</option>
+                        {this.state.shoeArray.map(shoe => {
+                        return <option value={shoe.id}>{shoe.brand}: {shoe.model}</option>
+                        })}
+                    </select>
                     <button id="saveRace" disabled={this.state.loadingStatus} onClick={this.constructNewRaces}>Save Race</button>
                 </section>
                 </article>
