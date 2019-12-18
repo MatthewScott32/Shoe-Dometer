@@ -69,7 +69,7 @@ class ShoesEditForm extends Component {
                         dateOfPurchase: shoes.dateOfPurchase,
                         mileage: shoes.mileage,
                         injuries: shoes.injuries,
-                        condition: shoes.condtion,
+                        condition: shoes.condition,
                         trailRoadBoth: shoes.trailRoadBoth,
                         weight: shoes.weight,
                         racesUsed: shoes.racesUsed,
@@ -128,26 +128,16 @@ class ShoesEditForm extends Component {
                     value={this.state.condition}/>
 
                     <h3 htmlFor="trailRoadBoth">Trail, Road, Both</h3>
-                    <select type="select" required className="form-control"
+                    <input type="input" required className="form-control"
                     onChange={this.handleFieldChange}
                     id="trailRoadBoth"
-                    value={this.state.trailRoadBoth}>
-                        <option value="none">Select</option>
-                        <option value="Both">Light</option>
-                        <option value="Road">Medium</option>
-                        <option value="Both">Heavy</option>
-                    </select>
+                    value={this.state.trailRoadBoth}/>
 
-                    <h3 htmlFor="weighth">Weight</h3>
-                    <select type="select" required className="form-control"
+                    <h3 htmlFor="weight">Shoe Weight</h3>
+                    <input type="input" required className="form-control"
                     onChange={this.handleFieldChange}
                     id="weight"
-                    value={this.state.trailRoadBoth}>
-                        <option value="none">Select</option>
-                        <option value="Light">Light</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Heavy">Heavy</option>
-                    </select>
+                    value={this.state.weight}/>
                     
                     <h3 htmlFor="racesUsed">Races Used</h3>
                     <input type="input" required className="form-control"
