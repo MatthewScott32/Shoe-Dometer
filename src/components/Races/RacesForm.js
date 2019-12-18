@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import RacesManager from '../../modules/RaceManager';
 import ShoesManager from '../../modules/ShoesManager';
+import { getUser } from '../../modules/Helpers';
 // import './RacesForm.css'
 
 class RacesForm extends Component {
@@ -51,9 +52,9 @@ class RacesForm extends Component {
 
 
         componentDidMount() {
-            RacesManager.getAll()
+            RacesManager.getAllAccountRaces(getUser().id)
             .then(races => this.setState({races: races}))
-            ShoesManager.getAll()
+            ShoesManager.getAllAccountShoes(getUser().id)
             .then(shoes => this.setState({shoeArray: shoes}))
         }
 

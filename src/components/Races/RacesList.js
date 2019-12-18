@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import RacesCard from './RacesCard'
 import RacesManager from '../../modules/RaceManager'
+import { getUser } from '../../modules/Helpers'
 
 class RacesList extends Component {
     state = {
@@ -8,7 +9,7 @@ class RacesList extends Component {
     }
 
     componentDidMount(){
-        RacesManager.getAll()
+        RacesManager.getAllAccountRaces(getUser().id)
         .then((racesArray) => {
             this.setState({
                 races: racesArray
@@ -20,7 +21,7 @@ class RacesList extends Component {
     deleteRaces = id => {
         RacesManager.delete(id)
         .then(() => {
-            RacesManager.getAll()
+            RacesManager.getAllAccountRaces(getUser().id)
             .then((newRaces) => {
                 this.setState({
                     races: newRaces

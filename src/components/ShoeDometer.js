@@ -23,7 +23,6 @@ class ShoeDometer extends Component {
         For now, just store the user name and password that
         the customer enters into local storage.
       */
-     console.log(authObj)
       localStorage.setItem(
         "credentials",
         JSON.stringify(authObj)
@@ -36,7 +35,6 @@ class ShoeDometer extends Component {
     clearUser = () => {
       // localStorage.clear()
       localStorage.removeItem("credentials")
-  
       this.setState({user: this.isAuthenticated()})
     }
   
@@ -49,10 +47,10 @@ class ShoeDometer extends Component {
     return (
       <React.Fragment>
 
-<NavBar user={this.state.user} clearUser={this.clearUser} />       
- <ApplicationViews user={this.state.user}
-          setUser={this.setUser} 
-          isAuthenticated={this.isAuthenticated}/>
+        <NavBar user={this.state.user} clearUser={this.clearUser} />       
+        <ApplicationViews user={this.state.user}
+                setUser={this.setUser} 
+                isAuthenticated={this.isAuthenticated}/>
       </React.Fragment>
     );
   }

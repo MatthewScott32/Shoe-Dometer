@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ShoesCard from './ShoesCard'
 import ShoesManager from '../../modules/ShoesManager'
+import { getUser } from '../../modules/Helpers'
 
 class ShoesList extends Component {
     state = {
@@ -8,7 +9,7 @@ class ShoesList extends Component {
     }
 
     componentDidMount(){
-        ShoesManager.getAll()
+        ShoesManager.getAllAccountShoes(getUser().id)
         .then((shoesArray) => {
             this.setState({
                 shoes: shoesArray
@@ -19,7 +20,7 @@ class ShoesList extends Component {
     deleteShoes = id => {
         ShoesManager.delete(id)
         .then(() => {
-            ShoesManager.getAll()
+            ShoesManager.getAllAccountShoes(getUser().id)
             .then((newShoes) => {
                 this.setState({
                     shoes: newShoes
