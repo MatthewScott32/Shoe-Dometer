@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import ShoesManager from '../../modules/ShoesManager';
+import { getUser } from '../../modules/Helpers';
 // import './ShoesForm.css'
 
 class ShoesEditForm extends Component {
     
     state ={
+        userId: getUser().id,
         // image: "",
         brand: "",
         model: "",
@@ -35,10 +37,9 @@ class ShoesEditForm extends Component {
     updateExistingShoes = event => {
         event.preventDefault();
             this.setState({ loadingStatus: true});
-            const currentUser = JSON.parse(localStorage.getItem("currentUser"))
             const editedShoes = {
                 id: this.props.match.params.shoesId,
-                userId: currentUser,
+                userId: getUser().id,
                 // image: this.state.image,
                 brand: this.state.brand,
                 model: this.state.model,

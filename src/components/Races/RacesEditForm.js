@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import RacesManager from '../../modules/RaceManager';
 import ShoesManager from '../../modules/ShoesManager';
+import { getUser } from '../../modules/Helpers';
 // import './RaceForm.css'
 
 class RacesEditForm extends Component {
     
     state ={
+        userId: getUser().id,
         shoeId: "",
         raceName: "",
         raceLocation: "",
@@ -29,7 +31,7 @@ class RacesEditForm extends Component {
             const currentUser = JSON.parse(localStorage.getItem("currentUser"))
             const editedRaces = {
                 id: this.props.match.params.racesId,
-                userId: currentUser,
+                userId: getUser().id,
                 // image: this.state.image,
                 raceName: this.state.raceName,
                 raceLocation: this.state.raceLocation,
@@ -46,7 +48,7 @@ class RacesEditForm extends Component {
             }
 
             componentDidMount() {
-                ShoesManager.getAll()
+                ShoesManager.getAllAccountShoes(getUser().id)
                 .then(shoes => this.setState({shoeArray: shoes}))
                 RacesManager.get(this.props.match.params.racesId)
                 .then(races => {

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import ShoesManager from '../../modules/ShoesManager';
+import { getUser } from '../../modules/Helpers';
 // import './ShoesForm.css'
 
 class ShoesForm extends Component {
     
     state ={
-        userId: "",
+        userId: getUser().id,
         // image: "",
         brand: "",
         model: "",
@@ -43,9 +44,8 @@ class ShoesForm extends Component {
             window.alert("Form Incomplete") 
         } else {
             this.setState({ loadingStatus: true});
-            const currentUser = JSON.parse(localStorage.getItem("credentials"))
             const shoes = {
-                userId: currentUser.id,
+                userId: getUser().id,
                 // image: this.state.image,
                 brand: this.state.brand,
                 model: this.state.model,
@@ -66,7 +66,7 @@ class ShoesForm extends Component {
     
     
     componentDidMount() {
-        ShoesManager.getAll()
+        ShoesManager.getAllAccountShoes(getUser().id)
         .then(shoes => this.setState({shoes: shoes}))
     }
     

@@ -5,9 +5,9 @@ export default {
     get(id) {
         return fetch(`${remoteURL}/races/${id}`).then(result => result.json())
     },
-    // getAllAccountRaces(id) {
-    //     return fetch(`${remoteURL}/races${userAccount}${id}`).then(result => result.json())
-    // },
+    getAllAccountRaces(id) {
+        return fetch(`${remoteURL}/races?userId=${id}&_expand=shoe`).then(result => result.json())
+    },
     getAll() {
         return fetch(`${remoteURL}/races?_expand=shoe`).then(result => result.json())
     },

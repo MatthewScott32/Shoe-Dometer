@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import "./CurrentShoes.css"
 import ShoesCard from "../Shoes/ShoesCard"
 import ShoesManager from "../../modules/ShoesManager"
+import { getUser } from "../../modules/Helpers"
 // import { Link } from "react-router-dom"
 // import { directive } from "@babel/types"
 
@@ -15,7 +16,7 @@ class CurrentShoes extends Component {
     }
 
 componentDidMount() {
-    ShoesManager.getAll()
+    ShoesManager.getAllAccountShoes(getUser().id)
     .then(Shoes => {
       let currentShoeArray = Shoes.filter(shoe => {
             return shoe.current === true
