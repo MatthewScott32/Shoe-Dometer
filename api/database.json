@@ -249,6 +249,7 @@
       "id": 10
     },
     {
+      "id": 11,
       "userId": 23,
       "brand": "Reebok",
       "model": "Highs",
@@ -256,12 +257,10 @@
       "dateOfPurchase": "2019-12-18",
       "mileage": "2",
       "injuries": "none",
-      "condition": "fair",
       "trailRoadBoth": "Road",
       "weight": "Light",
       "racesUsed": "none",
-      "current": false,
-      "id": 11
+      "current": true
     }
   ],
   "races": [
@@ -286,6 +285,17 @@
       "placement": "1",
       "shoeId": 2,
       "id": 3
+    },
+    {
+      "userId": 23,
+      "raceName": "Bunion Fun Run",
+      "raceLocation": "Nashville",
+      "raceDate": "2019-12-18",
+      "raceTime": "21:00",
+      "distance": "3.1",
+      "placement": "2",
+      "shoeId": 11,
+      "id": 4
     }
   ]
 }
