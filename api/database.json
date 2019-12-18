@@ -114,6 +114,31 @@
       "userName": "Mike",
       "password": "1111",
       "id": 23
+    },
+    {
+      "userName": "bob",
+      "password": "1234",
+      "id": 24
+    },
+    {
+      "userName": "chase fizzite",
+      "password": "1111",
+      "id": 25
+    },
+    {
+      "userName": "coco",
+      "password": "1111",
+      "id": 26
+    },
+    {
+      "userName": "Jimmy",
+      "password": "1111",
+      "id": 27
+    },
+    {
+      "userName": "Sam",
+      "password": "5555",
+      "id": 28
     }
   ],
   "shoes": [
@@ -141,8 +166,9 @@
       "dateOfPurchase": "2019-12-16",
       "mileage": "3",
       "injuries": "none",
-      "trailRoadBoth": "Both",
-      "weight": "Medium",
+      "condition": "good, not good",
+      "trailRoadBoth": "Trail",
+      "weight": "Heavy",
       "racesUsed": "none",
       "current": true
     },
@@ -160,49 +186,6 @@
       "racesUsed": "none",
       "current": false,
       "id": 4
-    },
-    {
-      "brand": "British Knights",
-      "model": "x721",
-      "size": "13",
-      "dateOfPurchase": "2019-12-18",
-      "mileage": "0",
-      "injuries": "0",
-      "condition": "0",
-      "trailRoadBoth": "Trail",
-      "weight": "Heavy",
-      "racesUsed": "0",
-      "current": true,
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "brand": "Say",
-      "model": "Hello",
-      "size": "1",
-      "dateOfPurchase": "2019-12-18",
-      "mileage": "4",
-      "injuries": "none",
-      "condition": "good",
-      "trailRoadBoth": "Trail",
-      "weight": "Light",
-      "racesUsed": "none",
-      "current": false,
-      "id": 6
-    },
-    {
-      "brand": "Slips",
-      "model": "Shades",
-      "size": "9",
-      "dateOfPurchase": "2019-12-18",
-      "mileage": "5",
-      "injuries": "none",
-      "condition": "fair",
-      "trailRoadBoth": "Trail",
-      "weight": "Heavy",
-      "racesUsed": "none",
-      "current": false,
-      "id": 7
     },
     {
       "userId": 20,
@@ -235,20 +218,6 @@
       "id": 9
     },
     {
-      "brand": "Nike",
-      "model": "Smokes",
-      "size": "8",
-      "dateOfPurchase": "2019-12-18",
-      "mileage": "6",
-      "injuries": "none",
-      "condition": "good",
-      "trailRoadBoth": "Road",
-      "weight": "Light",
-      "racesUsed": "none",
-      "current": false,
-      "id": 10
-    },
-    {
       "id": 11,
       "userId": 23,
       "brand": "Reebok",
@@ -261,6 +230,81 @@
       "weight": "Light",
       "racesUsed": "none",
       "current": true
+    },
+    {
+      "id": 12,
+      "userId": 25,
+      "brand": "british knights",
+      "model": "x46",
+      "size": "10",
+      "dateOfPurchase": "2019-12-11",
+      "mileage": "4",
+      "injuries": "blisters",
+      "condition": "pain at 11th mile",
+      "trailRoadBoth": "Trail",
+      "weight": "Heavy",
+      "racesUsed": "1",
+      "current": true
+    },
+    {
+      "userId": 25,
+      "brand": "nike",
+      "model": "jordan",
+      "size": "11",
+      "dateOfPurchase": "2019-12-26",
+      "mileage": "111",
+      "injuries": "none",
+      "condition": "perfect",
+      "trailRoadBoth": "Trail",
+      "weight": "Heavy",
+      "racesUsed": "none",
+      "current": true,
+      "id": 13
+    },
+    {
+      "id": 14,
+      "userId": 27,
+      "brand": "Nike",
+      "model": "Ghosts",
+      "size": "9",
+      "dateOfPurchase": "2019-12-01",
+      "mileage": "20",
+      "injuries": "shin splints",
+      "condition": "heel started to come off after 10",
+      "trailRoadBoth": "Road",
+      "weight": "Light",
+      "racesUsed": "none",
+      "current": false
+    },
+    {
+      "id": 15,
+      "userId": 27,
+      "brand": "Puma",
+      "model": "Fudges",
+      "size": "10",
+      "dateOfPurchase": "2019-11-01",
+      "mileage": "50",
+      "injuries": "blister on left big toe",
+      "condition": "started to fall apart after 25 miles",
+      "trailRoadBoth": "Trail",
+      "weight": "Medium",
+      "racesUsed": "none",
+      "current": true
+    },
+    {
+      "userId": 1,
+      "brand": "adfs",
+      "model": "dfasfasd",
+      "size": "1",
+      "dateOfPurchase": "2019-12-17",
+      "mileage": "5",
+      "injuries": "none",
+      "condition": "good",
+      "trailRoadBoth": "Trail",
+      "weight": "Light",
+      "racesUsed": "none",
+      "current": false,
+      "id": 16
     }
   ],
   "races": [
@@ -296,6 +340,28 @@
       "placement": "2",
       "shoeId": 11,
       "id": 4
+    },
+    {
+      "userId": 25,
+      "raceName": "west coast",
+      "raceLocation": "nyc",
+      "raceDate": "2019-12-11",
+      "raceTime": "10:00Am",
+      "distance": "26 miles",
+      "placement": "3",
+      "shoeId": 13,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "userId": 27,
+      "raceName": "Run for Bat Rabies Awareness",
+      "raceLocation": "Nashville",
+      "raceDate": "2019-12-18",
+      "raceTime": "22:43",
+      "distance": "3.1",
+      "placement": "3",
+      "shoeId": "15"
     }
   ]
 }

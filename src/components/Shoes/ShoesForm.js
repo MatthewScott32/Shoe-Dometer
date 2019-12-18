@@ -94,19 +94,9 @@ class ShoesForm extends Component {
                     <h3>Condition with Miles</h3>
                     <input type="input" id="condition" onChange={this.handleFieldChange}/>
                     <h3>Trail, Road, Both</h3>
-                    <select type="select" id="trailRoadBoth" onChange={this.handleFieldChange}>
-                        <option value="none">Select</option>
-                        <option value="Trail">Trail</option>
-                        <option value="Road">Road</option>
-                        <option value="Both">Both</option>
-                    </select>
-                    <h3>Weight</h3>
-                    <select type="select" id="weight" onChange={this.handleFieldChange}>
-                        <option value="none">Select</option>
-                        <option value="Light">Light</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Heavy">Heavy</option>
-                    </select>
+                    <input type="input" id="trailRoadBoth" onChange={this.handleFieldChange}/>
+                    <h3>Shoe Weight</h3>
+                    <input type="input" id="weight" onChange={this.handleFieldChange}/>
                     <h3>Races Used</h3>
                     <input type="input" id="racesUsed" onChange={this.handleFieldChange}/>
                     <h3>Current</h3>
