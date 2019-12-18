@@ -99,6 +99,21 @@
       "userName": "Ryan",
       "password": "5656",
       "id": 20
+    },
+    {
+      "userName": "Kristen",
+      "password": "9999",
+      "id": 21
+    },
+    {
+      "userName": "Steve",
+      "password": "5555",
+      "id": 22
+    },
+    {
+      "userName": "Mike",
+      "password": "1111",
+      "id": 23
     }
   ],
   "shoes": [
@@ -218,6 +233,35 @@
       "racesUsed": "none",
       "current": false,
       "id": 9
+    },
+    {
+      "brand": "Nike",
+      "model": "Smokes",
+      "size": "8",
+      "dateOfPurchase": "2019-12-18",
+      "mileage": "6",
+      "injuries": "none",
+      "condition": "good",
+      "trailRoadBoth": "Road",
+      "weight": "Light",
+      "racesUsed": "none",
+      "current": false,
+      "id": 10
+    },
+    {
+      "userId": 23,
+      "brand": "Reebok",
+      "model": "Highs",
+      "size": "10",
+      "dateOfPurchase": "2019-12-18",
+      "mileage": "2",
+      "injuries": "none",
+      "condition": "fair",
+      "trailRoadBoth": "Road",
+      "weight": "Light",
+      "racesUsed": "none",
+      "current": false,
+      "id": 11
     }
   ],
   "races": [

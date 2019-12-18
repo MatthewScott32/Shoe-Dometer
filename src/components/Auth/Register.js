@@ -33,8 +33,9 @@ class Registration extends Component {
 
       };
       UsersManager.post(user)
-      .then(() => {
+      .then(newUser => {
         this.props.setUser({
+            id: newUser.id,
             userName: this.state.userName,
             password: this.state.password
         })
