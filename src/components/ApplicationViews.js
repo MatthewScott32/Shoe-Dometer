@@ -10,6 +10,8 @@ import RacesList from "./Races/RacesList";
 import RacesForm from "./Races/RacesForm";
 import RacesEditForm from "./Races/RacesEditForm";
 import Registration from "./Auth/Register";
+import ShoesCardDetails from "./Shoes/ShoesCardDetails";
+import RaceCardDetails from "./Races/RaceCardDetails";
 
 
 
@@ -49,6 +51,10 @@ export default class ApplicationViews extends Component {
             }
          }} 
          />
+         <Route exact path="/shoes/:shoeId(\d+)" render={props => {
+                return <ShoesCardDetails {...props} {...this.props} shoeId= {parseInt(props.match.params.shoeId)} />
+            }} 
+         />
             <Route path="/shoes/new" render={props => {
             return <ShoesForm {...props} />
         }}
@@ -73,6 +79,10 @@ export default class ApplicationViews extends Component {
              return <RacesEditForm {...props}/>
          }}
          />
+          {/* <Route exact path="/races/:raceId(\d+)" render={props => {
+                return <RaceCardDetails {...props} {...this.props} raceId= {parseInt(props.match.params.raceId)} />
+            }} 
+         /> */}
          </>
        )
      }
