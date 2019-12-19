@@ -5,6 +5,9 @@ export default {
     get(id) {
         return fetch(`${remoteURL}/shoes/${id}`).then(result => result.json())
     },
+    getCurrentShoe(id) {
+        return fetch(`${remoteURL}/shoes/?userId=${id}&current=true`).then(result => result.json())
+    },
     getAllAccountShoes(id) {
         return fetch(`${remoteURL}/shoes?userId=${id}`).then(result => result.json())
     },

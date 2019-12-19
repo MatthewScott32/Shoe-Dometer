@@ -139,6 +139,11 @@
       "userName": "Sam",
       "password": "5555",
       "id": 28
+    },
+    {
+      "userName": "Jimmy Joe Joe",
+      "password": "6565",
+      "id": 29
     }
   ],
   "shoes": [
@@ -156,36 +161,6 @@
       "racesUsed": "none",
       "current": false,
       "id": 2
-    },
-    {
-      "id": 3,
-      "userId": 1,
-      "brand": "Nike",
-      "model": "Slam",
-      "size": "10",
-      "dateOfPurchase": "2019-12-16",
-      "mileage": "3",
-      "injuries": "none",
-      "condition": "good, not good",
-      "trailRoadBoth": "Trail",
-      "weight": "Heavy",
-      "racesUsed": "none",
-      "current": true
-    },
-    {
-      "userId": 1,
-      "brand": "Hello",
-      "model": "Hey",
-      "size": "32",
-      "dateOfPurchase": "2019-12-18",
-      "mileage": "13",
-      "injuries": "none",
-      "condition": "bad",
-      "trailRoadBoth": "Trail",
-      "weight": "Light",
-      "racesUsed": "none",
-      "current": false,
-      "id": 4
     },
     {
       "userId": 20,
@@ -293,32 +268,36 @@
     },
     {
       "userId": 1,
-      "brand": "adfs",
-      "model": "dfasfasd",
-      "size": "1",
+      "brand": "fsdafasdfadsf",
+      "model": "fasdfasdfsda",
+      "size": "fasdfasdfasd",
       "dateOfPurchase": "2019-12-17",
-      "mileage": "5",
-      "injuries": "none",
-      "condition": "good",
-      "trailRoadBoth": "Trail",
-      "weight": "Light",
-      "racesUsed": "none",
-      "current": false,
+      "mileage": "4",
+      "injuries": "fsdafasd",
+      "condition": "fasdfads",
+      "trailRoadBoth": "ffsdafasd",
+      "weight": "fsdafasd",
+      "racesUsed": "fadsfasd",
+      "current": true,
       "id": 16
+    },
+    {
+      "userId": 1,
+      "brand": "6543654",
+      "model": "66536",
+      "size": "5643654",
+      "dateOfPurchase": "2019-12-02",
+      "mileage": "63563",
+      "injuries": "645635",
+      "condition": "4565",
+      "trailRoadBoth": "46356",
+      "weight": "645645",
+      "racesUsed": "6563456",
+      "current": false,
+      "id": 17
     }
   ],
   "races": [
-    {
-      "id": 2,
-      "userId": 1,
-      "raceName": "Color Run",
-      "raceLocation": "Nashville",
-      "raceDate": "2019-12-18",
-      "raceTime": "3 hours",
-      "distance": "3.1",
-      "placement": "1",
-      "shoeId": 4
-    },
     {
       "userId": 5,
       "raceName": "Color Run for Manila Awareness",

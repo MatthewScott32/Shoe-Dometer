@@ -11,6 +11,7 @@ class ShoesList extends Component {
     componentDidMount(){
         ShoesManager.getAllAccountShoes(getUser().id)
         .then((shoesArray) => {
+            console.log(shoesArray)
             this.setState({
                 shoes: shoesArray
             })
