@@ -52,6 +52,7 @@ class RacesEditForm extends Component {
                 .then(shoes => this.setState({shoeArray: shoes}))
                 RacesManager.get(this.props.match.params.racesId)
                 .then(races => {
+                    console.log(races)
                     this.setState({
                         raceName: races.raceName,
                         raceLocation: races.raceLocation,
@@ -59,13 +60,14 @@ class RacesEditForm extends Component {
                         raceTime: races.raceTime,
                         distance: races.distance,
                         placement: races.placement,
-                        shoeId: this.state.shoeId,
+                        shoeId: races.shoeId,
                         loadingStatus: false,
                     })
                 })
             }
-
+            
             render() {
+                console.log("hey", this.state.shoeId)
                 return(
                     <>
                     <form>
@@ -92,8 +94,8 @@ class RacesEditForm extends Component {
                     <h3 htmlFor="raceTime">Race Time</h3>
                     <input type="input" required className="form-control"
                     onChange={this.handleFieldChange}
-                    id="dateOfPurchase"
-                    value={this.state.dateOfPurchase}/>
+                    id="raceTime"
+                    value={this.state.raceTime}/>
 
                     <h3 htmlFor="distance">Distance</h3>
                     <input type="input" required className="form-control"
@@ -108,12 +110,13 @@ class RacesEditForm extends Component {
                     value={this.state.placement}/>
                    </div>
 
-                   <h3 htmlFor="placement">Shoes Used</h3>
-                   <select type="select" id="shoeId" onChange={this.handleFieldChange}>
+                   <h3 htmlFor="shoeId">Shoes Used</h3>
+                   <select   type="select" id="shoeId" value={this.state.shoeId} onChange={this.handleFieldChange}>
                         <option value="none">Select</option>
                         {this.state.shoeArray.map(shoe => {
-                        return <option value={shoe.id}>{shoe.brand}: {shoe.model}</option>
-                        })}
+                        return <option key={shoe.id} value={shoe.id}>{shoe.brand}: {shoe.model}</option>
+                        })
+                       }
                     </select><br/><br/>
 
                    <div className="alignRight">
