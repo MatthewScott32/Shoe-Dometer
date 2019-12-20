@@ -81,7 +81,8 @@ class RacesForm extends Component {
                         <option value="none">Select</option>
                         {this.state.shoeArray.map(shoe => {
                         return <option value={shoe.id}>{shoe.brand}: {shoe.model}</option>
-                        })}
+                        })
+                       }
                     </select>
                     <button id="saveRace" disabled={this.state.loadingStatus} onClick={this.constructNewRaces}>Save Race</button>
                 </section>
