@@ -79,10 +79,10 @@ export default class ApplicationViews extends Component {
              return <RacesEditForm {...props}/>
          }}
          />
-          {/* <Route exact path="/races/:raceId(\d+)" render={props => {
+          <Route exact path="/races/:raceId(\d+)" render={props => {
                 return <RaceCardDetails {...props} {...this.props} raceId= {parseInt(props.match.params.raceId)} />
             }} 
-         /> */}
+         />
          </>
        )
      }

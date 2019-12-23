@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import RacesCard from './RacesCard'
 import RacesManager from '../../modules/RaceManager'
 import { getUser } from '../../modules/Helpers'
+import RaceCardDetails from './RaceCardDetails'
 
 class RacesList extends Component {
     state = {
