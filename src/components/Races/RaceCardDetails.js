@@ -16,7 +16,14 @@ class RaceCardDetails extends Component {
                 this.setState({
                 race:raceDetailCard})
         })
-    }
+      }
+
+        deleteRaces = id => {
+            RaceManager.delete(id)
+            .then(() => {
+                this.props.history.push('/races')
+            })
+        }
 
     render() {
         return(
@@ -28,13 +35,14 @@ class RaceCardDetails extends Component {
                     <p>Race Time: {this.state.race.raceTime}</p>
                     <p>Distance: {this.state.race.distance}</p>
                     <p>Placement: {this.state.race.placement}</p>
-                    <p>Shoes Used: {this.state.race.shoe.brand} {this.state.race.shoe.model}</p>
-                    <button type="button" onClick={() => this.state.deleteRaces(this.state.race.id)}>Delete</button><br/>
-                    <button type="button" onClick={() => {this.state.history.push(`/races/${this.props.race.id}/edit`)}}>Edit</button><br/>
+                    {/* <p>Shoes Used: {this.props.race.shoe.brand} {this.props.race.shoe.model}</p> */}
+                    <button type="button" onClick={() => this.deleteRaces(this.state.race.id)}>Delete</button><br/>
+                    <button type="button" onClick={() => {this.props.history.push(`/races/${this.state.race.id}/edit`)}}>Edit</button><br/>
                 </div>
             </div>
-        )
+      )
     }
 }
+
 
 export default RaceCardDetails

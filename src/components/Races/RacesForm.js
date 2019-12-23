@@ -80,7 +80,7 @@ class RacesForm extends Component {
                     <select type="select" id="shoeId" onChange={this.handleFieldChange}>
                         <option value="none">Select</option>
                         {this.state.shoeArray.map(shoe => {
-                        return <option value={shoe.id}>{shoe.brand}: {shoe.model}</option>
+                        return <option key={shoe.id} value={shoe.id}>{shoe.brand}: {shoe.model}</option>
                         })
                        }
                     </select>
