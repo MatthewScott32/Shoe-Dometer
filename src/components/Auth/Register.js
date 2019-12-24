@@ -59,7 +59,7 @@ class Registration extends Component {
       <form >
         <fieldset>
             <h1>Welcome to Shoe-Dometer!</h1>
-          <h3>Please Sign In</h3>
+          <h3>Register and Begin Tracking Your Miles Today</h3>
           <div className="formgrid">
             <input onChange={this.handleFieldChange} type="userName"
               id="userName"
