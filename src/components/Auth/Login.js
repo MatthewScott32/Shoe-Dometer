@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import UsersManager from "../../modules/UsersManager"
+import "./Login.css"
 
 class Login extends Component {
 
@@ -40,23 +41,40 @@ class Login extends Component {
     return (
       <form onSubmit={this.handleLogin}>
         <fieldset>
-            <h3>Please sign in</h3>
-            <div className="formgrid">
-                <label htmlFor="inputUserName">User Name</label>
-                <input onChange={this.handleFieldChange} type="userName"
-                    id="userName"
-                    placeholder="User Name"
-                    required="" /><br/>
+            <h3 class="title">Please sign in</h3>
+            <div class="line">
+              <hr/>
+            </div>
+          
+          <div class="username">
+            <div class="subtitle">
+                    <label htmlFor="inputUserName" class="subtitle">User Name:</label>
+                    <div>
+                    <input onChange={this.handleFieldChange} type="userName"
+                        id="userName"
+                        placeholder="User Name"
+                        required="" />
+                    </div>
+            </div>
+          </div>
 
-                <label htmlFor="inputPassword">Password</label>
+            <div class="subtitle">
+            <div class="passinput">
+                <label htmlFor="inputPassword" class="subtitle">Password:</label>
+                <div>
                 <input onChange={this.handleFieldChange} type="password"
                     id="password"
                     placeholder="Password"
-                    required="" />
+                    required="" class="password" />
+                </div>
             </div>
-            <button type="submit">
-                Sign in
-            </button>
+            </div>
+
+            <div class="wrapper">
+              <div class="button">
+                  Sign in
+              </div>
+            </div>
         </fieldset>
       </form>
     )
