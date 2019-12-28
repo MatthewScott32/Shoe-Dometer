@@ -41,31 +41,33 @@ class Login extends Component {
     return (
       <form onSubmit={this.handleLogin}>
         <fieldset>
-            <h3 class="title">Please sign in</h3>
-            <div class="line">
+        <h1 class="login-title">Welcome to Shoe-Dometer!</h1>
+          <h3 class="login-subtitle">Register and Begin Tracking Your Miles Today</h3>
+          <div class="login-slogan">
+            <h3 class="login-title">Please sign in</h3>
+          </div>
+            <div class="login-line">
               <hr/>
             </div>
           
           <div class="username">
-            <div class="subtitle">
-                    <label htmlFor="inputUserName" class="subtitle">User Name:</label>
+            <div class="login-subtitle">
                     <div>
                     <input onChange={this.handleFieldChange} type="userName"
                         id="userName"
                         placeholder="User Name"
-                        required="" />
+                        required="" class="login-username" />
                     </div>
             </div>
           </div>
 
-            <div class="subtitle">
+            <div class="login-subtitle">
             <div class="passinput">
-                <label htmlFor="inputPassword" class="subtitle">Password:</label>
                 <div>
                 <input onChange={this.handleFieldChange} type="password"
                     id="password"
                     placeholder="Password"
-                    required="" class="password" />
+                    required="" class="login-password" />
                 </div>
             </div>
             </div>

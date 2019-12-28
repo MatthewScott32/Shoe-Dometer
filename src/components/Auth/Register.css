@@ -1,44 +1,47 @@
-.login-title {
+.register-title {
     text-align: center;
     text-decoration-style: wavy;
     margin-top: 10px;
 }
 
-.login-subtitle {
+.register-subtitle {
     text-align: center;
     text-decoration: underline;
     font-style: italic;
     padding-right: 5px;
 }
 
-.login-slogan {
+.register-slogan {
     margin-top: 50px;
 }
 
-.username {
-    padding-top: 50px;
-}
-
-.wrapper {
+.register-username {
     text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    padding-right: 5px;
+    margin-top: 15px;
 }
 
-.login-username {
+.register-password {
     text-align: center;
     text-decoration: underline;
     font-style: italic;
     padding-right: 5px;
 }
 
-.login-password {
+.register-confirm {
     text-align: center;
     text-decoration: underline;
     font-style: italic;
     padding-right: 5px;
-    margin-top: 25px;
 }
 
-.button{
+.register-wrapper {
+    text-align: center;
+}
+
+.register-button{
     display: flex;
     align-items: center;
     margin-top: 50px;
@@ -55,7 +58,7 @@
     cursor: pointer;
 }
 
-.login-line {
+.register-line {
     width: 50%; 
     margin: 0 25% 0 25%;
     margin-top: 60px;
