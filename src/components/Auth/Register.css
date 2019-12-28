@@ -17,23 +17,17 @@
 
 .register-username {
     text-align: center;
-    text-decoration: underline;
-    font-style: italic;
     padding-right: 5px;
     margin-top: 15px;
 }
 
 .register-password {
     text-align: center;
-    text-decoration: underline;
-    font-style: italic;
     padding-right: 5px;
 }
 
 .register-confirm {
     text-align: center;
-    text-decoration: underline;
-    font-style: italic;
     padding-right: 5px;
 }
 

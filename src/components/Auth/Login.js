@@ -73,7 +73,7 @@ class Login extends Component {
             </div>
 
             <div class="wrapper">
-              <div class="button">
+              <div class="button" onClick={this.handleLogin }>
                   Sign in
               </div>
             </div>
