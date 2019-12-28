@@ -1,0 +1,73 @@
+.register-title {
+    text-align: center;
+    text-decoration-style: wavy;
+    margin-top: 10px;
+}
+
+.register-subtitle {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    padding-right: 5px;
+}
+
+.register-slogan {
+    margin-top: 50px;
+}
+
+.register-username {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    padding-right: 5px;
+    margin-top: 15px;
+}
+
+.register-password {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    padding-right: 5px;
+}
+
+.register-confirm {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    padding-right: 5px;
+}
+
+.register-wrapper {
+    text-align: center;
+}
+
+.register-button{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+    margin-right: 30px;
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #60a3bc;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.register-line {
+    width: 50%; 
+    margin: 0 25% 0 25%;
+    margin-top: 60px;
+    height: 10px;
+    border: 1;
+    box-shadow: inset 0 9px 9px -3px rgba(11, 99, 184, 0.8);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+ }

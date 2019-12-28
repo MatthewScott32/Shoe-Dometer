@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import UsersManager from "../../modules/UsersManager"
+import "./Login.css"
 
 class Login extends Component {
 
@@ -40,23 +41,42 @@ class Login extends Component {
     return (
       <form onSubmit={this.handleLogin}>
         <fieldset>
-            <h3>Please sign in</h3>
-            <div className="formgrid">
-                <label htmlFor="inputUserName">User Name</label>
-                <input onChange={this.handleFieldChange} type="userName"
-                    id="userName"
-                    placeholder="User Name"
-                    required="" /><br/>
+        <h1 class="login-title">Welcome to Shoe-Dometer!</h1>
+          <h3 class="login-subtitle">Register and Begin Tracking Your Miles Today</h3>
+          <div class="login-slogan">
+            <h3 class="login-title">Please sign in</h3>
+          </div>
+            <div class="login-line">
+              <hr/>
+            </div>
+          
+          <div class="username">
+            <div class="login-subtitle">
+                    <div>
+                    <input onChange={this.handleFieldChange} type="userName"
+                        id="userName"
+                        placeholder="User Name"
+                        required="" class="login-username" />
+                    </div>
+            </div>
+          </div>
 
-                <label htmlFor="inputPassword">Password</label>
+            <div class="login-subtitle">
+            <div class="passinput">
+                <div>
                 <input onChange={this.handleFieldChange} type="password"
                     id="password"
                     placeholder="Password"
-                    required="" />
+                    required="" class="login-password" />
+                </div>
             </div>
-            <button type="submit">
-                Sign in
-            </button>
+            </div>
+
+            <div class="wrapper">
+              <div class="button">
+                  Sign in
+              </div>
+            </div>
         </fieldset>
       </form>
     )

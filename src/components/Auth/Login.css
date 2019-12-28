@@ -1,0 +1,70 @@
+.login-title {
+    text-align: center;
+    text-decoration-style: wavy;
+    margin-top: 10px;
+}
+
+.login-subtitle {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    padding-right: 5px;
+}
+
+.login-slogan {
+    margin-top: 50px;
+}
+
+.username {
+    padding-top: 50px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.login-username {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    padding-right: 5px;
+}
+
+.login-password {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    padding-right: 5px;
+    margin-top: 25px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+    margin-right: 30px;
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #60a3bc;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.login-line {
+    width: 50%; 
+    margin: 0 25% 0 25%;
+    margin-top: 60px;
+    height: 10px;
+    border: 1;
+    box-shadow: inset 0 9px 9px -3px rgba(11, 99, 184, 0.8);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+ }
