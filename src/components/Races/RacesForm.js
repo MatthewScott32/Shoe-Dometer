@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import RacesManager from '../../modules/RaceManager';
 import ShoesManager from '../../modules/ShoesManager';
 import { getUser } from '../../modules/Helpers';
-// import './RacesForm.css'
+import './RacesForm.css'
 
 class RacesForm extends Component {
     

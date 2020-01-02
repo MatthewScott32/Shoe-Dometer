@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import RaceManager from "../../modules/RaceManager"
-// import "./RacesCard.css"
+import "./RaceCardDetails.css"
 // import { Link } from "react-router-dom"
 // import { directive } from "@babel/types"
 
@@ -31,8 +31,8 @@ class RaceCardDetails extends Component {
 
     render() {
         return(
-            <div>
-                <div className="card">
+            <div class="racecarddetails">
+                <div>
                     <p>Name: {this.state.race.raceName}</p>
                     <p>Location: {this.state.race.raceLocation}</p>
                     <p>Date: {this.state.race.raceDate}</p>
@@ -40,8 +40,10 @@ class RaceCardDetails extends Component {
                     <p>Distance: {this.state.race.distance}</p>
                     <p>Placement: {this.state.race.placement}</p>
                     <p>Shoes Used: {this.state.race.shoe.brand} {this.state.race.shoe.model}</p>
-                    <button type="button" onClick={() => {this.props.history.push(`/races/${this.state.race.id}/edit`)}}>Edit</button><br/>
-                    <button type="button" onClick={() => this.deleteRaces(this.state.race.id)}>Delete</button><br/>
+                    <div class="racebuttondetails1">
+                    <div class="racebuttondetails" onClick={() => {this.props.history.push(`/races/${this.state.race.id}/edit`)}}>Edit</div><br/>
+                    <div class="racebuttondetails" onClick={() => this.deleteRaces(this.state.race.id)}>Delete</div><br/>
+                    </div>
                 </div>
             </div>
       )

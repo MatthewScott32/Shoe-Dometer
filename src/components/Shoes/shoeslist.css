@@ -16,3 +16,10 @@
     width: 75px;
     font-size: 15px;
 }
+
+.shoescontainercards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px;
+}
