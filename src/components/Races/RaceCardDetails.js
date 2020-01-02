@@ -7,7 +7,11 @@ import RaceManager from "../../modules/RaceManager"
 class RaceCardDetails extends Component {
 
     state = {
-        race:{},
+        race:{
+            shoe: {
+                brand: ""
+            }
+        },
     }
 
         componentDidMount(){
@@ -35,9 +39,9 @@ class RaceCardDetails extends Component {
                     <p>Race Time: {this.state.race.raceTime}</p>
                     <p>Distance: {this.state.race.distance}</p>
                     <p>Placement: {this.state.race.placement}</p>
-                    {/* <p>Shoes Used: {this.props.race.shoe.brand} {this.props.race.shoe.model}</p> */}
-                    <button type="button" onClick={() => this.deleteRaces(this.state.race.id)}>Delete</button><br/>
+                    <p>Shoes Used: {this.state.race.shoe.brand} {this.state.race.shoe.model}</p>
                     <button type="button" onClick={() => {this.props.history.push(`/races/${this.state.race.id}/edit`)}}>Edit</button><br/>
+                    <button type="button" onClick={() => this.deleteRaces(this.state.race.id)}>Delete</button><br/>
                 </div>
             </div>
       )

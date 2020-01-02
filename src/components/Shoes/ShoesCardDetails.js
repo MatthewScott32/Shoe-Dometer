@@ -59,8 +59,8 @@ render() {
                     <p><strong>Shoe Weight:</strong> {this.state.shoe.weight}</p>
                     <p><strong>Races Used:</strong> {this.state.shoe.racesUsed}</p>
                     <p><strong>Current:</strong> {this.state.currentShoe ? 'Wearing' : 'Closet' }</p>
-                    <button type="button" onClick={() => this.deleteShoes(this.props.shoeId)}>Delete</button><br/>
                     <button type="button" onClick={() => {this.props.history.push(`/shoes/${this.state.shoe.id}/edit`)}}>Edit</button><br/>
+                    <button type="button" onClick={() => this.deleteShoes(this.props.shoeId)}>Delete</button><br/>
                 </div>
             </div>
         )

@@ -60,7 +60,6 @@ class Registration extends Component {
       <form >
         <fieldset>
             <h1 class="register-title">Welcome to Shoe-Dometer!</h1>
-          <h3 class="register-subtitle">Register and Begin Tracking Your Miles Today</h3>
           <div class="register-slogan">
           <h3 class="register-title">Register Today!</h3>
           </div>

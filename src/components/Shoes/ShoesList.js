@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ShoesCard from './ShoesCard'
 import ShoesManager from '../../modules/ShoesManager'
 import { getUser } from '../../modules/Helpers'
+import "./shoeslist.css"
 
 class ShoesList extends Component {
     state = {
@@ -33,8 +34,8 @@ class ShoesList extends Component {
     render() {
     return(
         <React.Fragment>
-          <button type="button" className="section-content" onClick={() => {this.props.history.push("/shoes/new")}}>Add Shoes</button>
-          <div className="container-cards">
+          <div class="addshoebutton" onClick={() => {this.props.history.push("/shoes/new")}}>Add Shoes</div>
+          <div className="shoescontainer-cards">
             {this.state.shoes.map(shoe =>
             <ShoesCard
                key={shoe.id}
