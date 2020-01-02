@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import "./ShoesCard.css"
+import "./ShoesDetails.css"
 import ShoesManager from "../../modules/ShoesManager"
 import { getUser } from "../../modules/Helpers"
 import CurrentShoes from "../CurrentShoes/CurrentShoes"
@@ -43,8 +43,8 @@ render() {
     // console.log(this.state.currentShoe)
     return(   
         //  msg = this.state.currentShoe ? 'Wearing' : 'Closet'
-            <div>
-                <div className="cardDetails">
+            <div class="shoescarddetails">
+                <div>
                     {/* <picture>
                         <img src={this.props.shoe.image}/>
                     </picture> */}
@@ -59,8 +59,10 @@ render() {
                     <p><strong>Shoe Weight:</strong> {this.state.shoe.weight}</p>
                     <p><strong>Races Used:</strong> {this.state.shoe.racesUsed}</p>
                     <p><strong>Current:</strong> {this.state.currentShoe ? 'Wearing' : 'Closet' }</p>
-                    <button type="button" onClick={() => {this.props.history.push(`/shoes/${this.state.shoe.id}/edit`)}}>Edit</button><br/>
-                    <button type="button" onClick={() => this.deleteShoes(this.props.shoeId)}>Delete</button><br/>
+                    <div class="shoebuttondetails1">
+                    <div class="shoebuttondetails" onClick={() => {this.props.history.push(`/shoes/${this.state.shoe.id}/edit`)}}>Edit</div><br/>
+                    <div class="shoebuttondetails" onClick={() => this.deleteShoes(this.props.shoeId)}>Delete</div><br/>
+                    </div>
                 </div>
             </div>
         )

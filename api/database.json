@@ -330,6 +330,21 @@
       "racesUsed": "benton race",
       "current": false,
       "id": 20
+    },
+    {
+      "userId": 1,
+      "brand": "Brooks",
+      "model": "shoe",
+      "size": "9",
+      "dateOfPurchase": "2020-01-02",
+      "mileage": "4",
+      "injuries": "blister",
+      "condition": "good",
+      "trailRoadBoth": "trail",
+      "weight": "light",
+      "racesUsed": "none",
+      "current": false,
+      "id": 21
     }
   ],
   "races": [
@@ -420,6 +435,17 @@
       "placement": "2",
       "shoeId": 20,
       "id": 14
+    },
+    {
+      "userId": 1,
+      "raceName": "Chicago Race",
+      "raceLocation": "Chicago",
+      "raceDate": "2020-01-02",
+      "raceTime": "22:00",
+      "distance": "3.1",
+      "placement": "4",
+      "shoeId": 21,
+      "id": 15
     }
   ]
 }
