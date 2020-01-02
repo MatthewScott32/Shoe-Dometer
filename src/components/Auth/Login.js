@@ -42,7 +42,6 @@ class Login extends Component {
       <form onSubmit={this.handleLogin}>
         <fieldset>
         <h1 class="login-title">Welcome to Shoe-Dometer!</h1>
-          <h3 class="login-subtitle">Register and Begin Tracking Your Miles Today</h3>
           <div class="login-slogan">
             <h3 class="login-title">Please sign in</h3>
           </div>
@@ -73,7 +72,7 @@ class Login extends Component {
             </div>
 
             <div class="wrapper">
-              <div class="button">
+              <div class="button" onClick={this.handleLogin }>
                   Sign in
               </div>
             </div>

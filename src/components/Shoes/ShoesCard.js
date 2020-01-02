@@ -14,9 +14,9 @@ class ShoesCard extends Component {
                     </picture>
                     <p><strong>Brand:</strong> {this.props.shoe.brand}</p>
                     <p><strong>Model:</strong> {this.props.shoe.model}</p>
-                    <button type="button" onClick={() => this.props.deleteShoes(this.props.shoe.id)}>Delete</button><br/>
-                    <button type="button" onClick={() => {this.props.history.push(`/shoes/${this.props.shoe.id}/edit`)}}>Edit</button><br/>
                     <button type="button" onClick={() => {this.props.history.push(`/shoes/${this.props.shoe.id}`)}}>Details</button><br/>
+                    <button type="button" onClick={() => {this.props.history.push(`/shoes/${this.props.shoe.id}/edit`)}}>Edit</button><br/>
+                    <button type="button" onClick={() => this.props.deleteShoes(this.props.shoe.id)}>Delete</button><br/>
                 </div>
             </div>
         )

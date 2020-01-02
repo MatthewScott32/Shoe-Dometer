@@ -3,6 +3,7 @@ import RacesCard from './RacesCard'
 import RacesManager from '../../modules/RaceManager'
 import { getUser } from '../../modules/Helpers'
 import RaceCardDetails from './RaceCardDetails'
+import "./raceslist.css"
 
 class RacesList extends Component {
     state = {
@@ -34,8 +35,8 @@ class RacesList extends Component {
     render() {
     return(
         <>
-          <button type="button" className="section-content" onClick={() => {this.props.history.push("/races/new")}}>Add Race</button>
-          <div className="container-cards">
+          <button type="button" class="addracebutton" onClick={() => {this.props.history.push("/races/new")}}>Add Race</button>
+          <div class="racescontainercards">
             {this.state.races.map(race =>
             <RacesCard
                key={race.id}

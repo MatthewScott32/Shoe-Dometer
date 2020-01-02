@@ -144,6 +144,11 @@
       "userName": "Jimmy Joe Joe",
       "password": "6565",
       "id": 29
+    },
+    {
+      "userName": "Matt2",
+      "password": "4321",
+      "id": 30
     }
   ],
   "shoes": [
@@ -295,6 +300,36 @@
       "racesUsed": "none",
       "current": true,
       "id": 18
+    },
+    {
+      "userId": 1,
+      "brand": "Nike",
+      "model": "Shoes",
+      "size": "9",
+      "dateOfPurchase": "2019-12-31",
+      "mileage": "5",
+      "injuries": "blister",
+      "condition": "heel falling apart after 10",
+      "trailRoadBoth": "trail",
+      "weight": "light",
+      "racesUsed": "Murray 5k",
+      "current": false,
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "brand": "Puma",
+      "model": "Shoes",
+      "size": "10",
+      "dateOfPurchase": "2019-12-23",
+      "mileage": "4",
+      "injuries": "none",
+      "condition": "toe blown out-20",
+      "trailRoadBoth": "road",
+      "weight": "medium",
+      "racesUsed": "benton race",
+      "current": false,
+      "id": 20
     }
   ],
   "races": [
@@ -352,6 +387,39 @@
       "distance": "122",
       "placement": "1",
       "shoeId": 18
+    },
+    {
+      "id": 12,
+      "userId": 1,
+      "raceName": "Nashville Race",
+      "raceLocation": "Nashville",
+      "raceDate": "2019-12-24",
+      "raceTime": "24:00",
+      "distance": "3.1",
+      "placement": "4",
+      "shoeId": "17"
+    },
+    {
+      "userId": 1,
+      "raceName": "Benton Race",
+      "raceLocation": "Benton",
+      "raceDate": "2020-01-01",
+      "raceTime": "23:00",
+      "distance": "3.1",
+      "placement": "4",
+      "shoeId": 19,
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "raceName": "Murray Race",
+      "raceLocation": "Murray",
+      "raceDate": "2020-01-01",
+      "raceTime": "22:00",
+      "distance": "3.1",
+      "placement": "2",
+      "shoeId": 20,
+      "id": 14
     }
   ]
 }
