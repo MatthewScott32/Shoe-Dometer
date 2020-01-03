@@ -302,6 +302,7 @@
       "id": 18
     },
     {
+      "id": 19,
       "userId": 1,
       "brand": "Nike",
       "model": "Shoes",
@@ -309,12 +310,11 @@
       "dateOfPurchase": "2019-12-31",
       "mileage": "5",
       "injuries": "blister",
-      "condition": "heel falling apart after 10",
+      "condition": "heel falling apart after 10 miles",
       "trailRoadBoth": "trail",
       "weight": "light",
       "racesUsed": "Murray 5k",
-      "current": false,
-      "id": 19
+      "current": false
     },
     {
       "userId": 1,
