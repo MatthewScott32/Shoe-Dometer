@@ -10,7 +10,7 @@ class NavBar extends Component  {
     render() {
     return (
         <div>
-        <Nav tabs>
+        <Nav class="navbar">
             <NavItem>
             <NavLink className="nav-link" href="/home">Home</NavLink>
             </NavItem>

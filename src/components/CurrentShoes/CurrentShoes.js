@@ -33,6 +33,7 @@ componentDidMount() {
   render() {
     return (
       <>
+      <body class="currentshoebody">
       <div class="currentshoecard">
          {(this.state.hasShoe)
          ?
@@ -42,9 +43,14 @@ componentDidMount() {
                {...this.props}
                />
                :
-            <h2>No Current Shoes</h2>
+            <h2 class="noshoe">No Current Shoes</h2>
+            
             }
+            <div class="invisibleline">
+            <hr/>
+            </div>
       </div>
+      </body>
       </>
     )
   }

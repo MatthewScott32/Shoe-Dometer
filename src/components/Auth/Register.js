@@ -57,6 +57,7 @@ class Registration extends Component {
 
   render() {
     return (
+      <body class="registerbody">
       <form >
         <fieldset>
             <h1 class="register-title">Welcome to Shoe-Dometer!</h1>
@@ -102,6 +103,7 @@ class Registration extends Component {
           </div>
         </fieldset>
       </form>
+      </body>
     )
   }
 

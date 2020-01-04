@@ -1,3 +1,11 @@
+.shoebody {
+    background-image: url("./runningshoes.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .addshoebutton {
     display: flex;
     align-items: center;
