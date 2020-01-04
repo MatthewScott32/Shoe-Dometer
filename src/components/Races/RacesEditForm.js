@@ -74,37 +74,37 @@ class RacesEditForm extends Component {
                     <fieldset>
                     <div className="formgrid">
                     <h3 htmlFor="raceName">Name</h3>
-                    <input class="raceinput" type="input" required className="form-control"
+                    <input class="raceinput" type="input" required 
                     onChange={this.handleFieldChange}
                     id="raceName"
                     value={this.state.raceName}/>
 
                     <h3 htmlFor="raceLocation">Location</h3>
-                    <input class="raceinput" type="input" required className="form-control"
+                    <input class="raceinput" type="input" required 
                     onChange={this.handleFieldChange}
                     id="raceLocation"
                     value={this.state.raceLocation}/>
 
                     <h3 htmlFor="raceDate">Date</h3>
-                    <input class="raceinput" type="date" required className="form-control"
+                    <input class="raceinput" type="date" required 
                     onChange={this.handleFieldChange}
                     id="raceDate"
                     value={this.state.raceDate}/>
 
                     <h3 htmlFor="raceTime">Race Time</h3>
-                    <input class="raceinput" type="input" required className="form-control"
+                    <input class="raceinput" type="input" required 
                     onChange={this.handleFieldChange}
                     id="raceTime"
                     value={this.state.raceTime}/>
 
                     <h3 htmlFor="distance">Distance</h3>
-                    <input class="raceinput" type="input" required className="form-control"
+                    <input class="raceinput" type="input" required 
                     onChange={this.handleFieldChange}
                     id="distance"
                     value={this.state.distance}/>
 
                     <h3 htmlFor="placement">Placement</h3>
-                    <input class="raceinput" type="number" required className="form-control"
+                    <input class="raceinput" type="number" required 
                     onChange={this.handleFieldChange}
                     id="placement"
                     value={this.state.placement}/>

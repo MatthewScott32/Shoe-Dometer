@@ -20,7 +20,9 @@
 }
 
 .raceinput {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
 }
 
 .racesubmit {
@@ -42,5 +44,4 @@
     border-radius: 50px;
     max-height: 40px;
     margin-left: 5px;
-    margin-top: 10px;
 }
