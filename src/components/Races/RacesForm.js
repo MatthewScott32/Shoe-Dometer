@@ -61,8 +61,9 @@ class RacesForm extends Component {
         render() {
             return (
           <>
-            <div className="card">
-             <div className="card-body">
+          <body className="raceformbody">
+            <div className="raceform">
+             <div>
               <article id="newRacesForm"><h1>New Race</h1>
                 <section>
                     <h3>Name</h3>
@@ -84,11 +85,12 @@ class RacesForm extends Component {
                         })
                        }
                     </select>
-                    <button id="saveRace" disabled={this.state.loadingStatus} onClick={this.constructNewRaces}>Save Race</button>
                 </section>
+                    <div className="raceformbutton" id="saveRace" disabled={this.state.loadingStatus} onClick={this.constructNewRaces}>Save Race</div>
                 </article>
               </div>
              </div>
+             </body>
                 </>
                 )
             }

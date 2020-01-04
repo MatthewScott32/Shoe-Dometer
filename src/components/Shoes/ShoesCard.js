@@ -22,17 +22,17 @@ export default function ShoesCard(props) {
         return(
             <Card className={classes.card}>
                 <CardContent>
-                <div class="shoecard">
+                <div className="shoecard">
                     <div>
                     <picture>
                         <img src={props.shoe.image}/>
                     </picture>
                     <p><strong>Brand:</strong> {props.shoe.brand}</p>
                     <p><strong>Model:</strong> {props.shoe.model}</p>
-                    <div class="shoebutton1">
-                    <div class="shoebutton" onClick={() => {props.history.push(`/shoes/${props.shoe.id}`)}}>Details</div><br/>
-                    <div class="shoebutton" onClick={() => {props.history.push(`/shoes/${props.shoe.id}/edit`)}}>Edit</div><br/>
-                    <div class="shoebutton" onClick={() => props.deleteShoes(props.shoe.id)}>Delete</div><br/>
+                    <div className="shoebutton1">
+                    <div className="shoebutton" onClick={() => {props.history.push(`/shoes/${props.shoe.id}`)}}>Details</div><br/>
+                    <div className="shoebutton" onClick={() => {props.history.push(`/shoes/${props.shoe.id}/edit`)}}>Edit</div><br/>
+                    <div className="shoebutton" onClick={() => props.deleteShoes(props.shoe.id)}>Delete</div><br/>
                     </div>
                 </div>
                </div>

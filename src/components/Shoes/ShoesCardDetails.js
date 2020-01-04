@@ -43,7 +43,8 @@ render() {
     // console.log(this.state.currentShoe)
     return(   
         //  msg = this.state.currentShoe ? 'Wearing' : 'Closet'
-            <div class="shoescarddetails">
+        <body className="shoesdetailsbody">
+            <div className="shoescarddetails">
                 <div>
                     {/* <picture>
                         <img src={this.props.shoe.image}/>
@@ -59,12 +60,13 @@ render() {
                     <p><strong>Shoe Weight:</strong> {this.state.shoe.weight}</p>
                     <p><strong>Races Used:</strong> {this.state.shoe.racesUsed}</p>
                     <p><strong>Current:</strong> {this.state.currentShoe ? 'Wearing' : 'Closet' }</p>
-                    <div class="shoebuttondetails1">
-                    <div class="shoebuttondetails" onClick={() => {this.props.history.push(`/shoes/${this.state.shoe.id}/edit`)}}>Edit</div><br/>
-                    <div class="shoebuttondetails" onClick={() => this.deleteShoes(this.props.shoeId)}>Delete</div><br/>
+                    <div className="shoebuttondetails1">
+                    <div className="shoebuttondetails" onClick={() => {this.props.history.push(`/shoes/${this.state.shoe.id}/edit`)}}>Edit</div><br/>
+                    <div className="shoebuttondetails" onClick={() => this.deleteShoes(this.props.shoeId)}>Delete</div><br/>
                     </div>
                 </div>
             </div>
+            </body>
         )
     }
 }

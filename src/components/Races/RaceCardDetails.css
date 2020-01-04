@@ -1,3 +1,8 @@
+.racedetailbody {
+    background-image: url("./racedetail.jpg");
+    background-size: cover;
+}
+
 .racecarddetails {
     width: 90%;
     max-width: 300px;
@@ -12,7 +17,7 @@
     flex-direction: column;
     min-height: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 200px;
     padding: 10px;
     color: white;
     margin-top: 50px;

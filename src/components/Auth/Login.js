@@ -21,59 +21,60 @@ class Login extends Component {
     event.preventDefault()
     UsersManager.getAllUsers()
     .then(usersArray => {
-        usersArray.map(user => {
+        usersArray.map((user, i) => {
             if(user.userName === this.state.userName && user.password === this.state.password){
                 this.props.setUser({
                     id: user.id,
                     userName: this.state.userName,
                     password: this.state.password
                 })
-                this.props.history.push("/home");
-            }
-        })
-        // no match warning
-    })
+                return this.props.history.push("/home");
+              }
+              if (i === usersArray.length-1 && !localStorage.getItem("credentials") ) return window.alert("Account Not Found. Please Register.")
+            })
+
+          })
     
 
   }
 
   render() {
     return (
-      <body class="loginbody">
+      <body className="loginbody">
       <form onSubmit={this.handleLogin}>
         <fieldset>
-        <h1 class="login-title">Welcome to Shoe-Dometer!</h1>
-          <div class="login-slogan">
-            <h3 class="login-title">Please sign in</h3>
+        <h1 className="login-title">Welcome to Shoe-Dometer!</h1>
+          <div className="login-slogan">
+            <h3 className="login-title">Please sign in</h3>
           </div>
-            <div class="login-line">
+            <div className="login-line">
               <hr/>
             </div>
           
-          <div class="username">
-            <div class="login-subtitle">
+          <div className="username">
+            <div className="login-subtitle">
                     <div>
                     <input onChange={this.handleFieldChange} type="userName"
                         id="userName"
                         placeholder="User Name"
-                        required="" class="login-username" />
+                        required="" className="login-username" />
                     </div>
             </div>
           </div>
 
-            <div class="login-subtitle">
-            <div class="passinput">
+            <div className="login-subtitle">
+            <div className="passinput">
                 <div>
                 <input onChange={this.handleFieldChange} type="password"
                     id="password"
                     placeholder="Password"
-                    required="" class="login-password" />
+                    required="" className="login-password" />
                 </div>
             </div>
             </div>
 
-            <div class="wrapper">
-              <div class="button" onClick={this.handleLogin }>
+            <div className="wrapper">
+              <div className="button" onClick={this.handleLogin }>
                   Sign in
               </div>
             </div>

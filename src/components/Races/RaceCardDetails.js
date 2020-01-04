@@ -31,7 +31,8 @@ class RaceCardDetails extends Component {
 
     render() {
         return(
-            <div class="racecarddetails">
+            <body className="racedetailbody">
+            <div className="racecarddetails">
                 <div>
                     <p>Name: {this.state.race.raceName}</p>
                     <p>Location: {this.state.race.raceLocation}</p>
@@ -40,12 +41,13 @@ class RaceCardDetails extends Component {
                     <p>Distance: {this.state.race.distance}</p>
                     <p>Placement: {this.state.race.placement}</p>
                     <p>Shoes Used: {this.state.race.shoe.brand} {this.state.race.shoe.model}</p>
-                    <div class="racebuttondetails1">
-                    <div class="racebuttondetails" onClick={() => {this.props.history.push(`/races/${this.state.race.id}/edit`)}}>Edit</div><br/>
-                    <div class="racebuttondetails" onClick={() => this.deleteRaces(this.state.race.id)}>Delete</div><br/>
+                    <div className="racebuttondetails1">
+                    <div className="racebuttondetails" onClick={() => {this.props.history.push(`/races/${this.state.race.id}/edit`)}}>Edit</div><br/>
+                    <div className="racebuttondetails" onClick={() => this.deleteRaces(this.state.race.id)}>Delete</div><br/>
                     </div>
                 </div>
             </div>
+            </body>
       )
     }
 }
