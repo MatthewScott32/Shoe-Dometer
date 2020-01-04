@@ -35,9 +35,9 @@ class RacesList extends Component {
     render() {
     return(
         <>
-        <body class="racelistbody">
-          <button type="button" class="addracebutton" onClick={() => {this.props.history.push("/races/new")}}>Add Race</button>
-          <div class="racescontainercards">
+        <body className="racelistbody">
+          <button type="button" className="addracebutton" onClick={() => {this.props.history.push("/races/new")}}>Add Race</button>
+          <div className="racescontainercards">
             {this.state.races.map(race =>
             <RacesCard
                key={race.id}

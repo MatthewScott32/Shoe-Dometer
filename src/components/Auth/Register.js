@@ -57,37 +57,37 @@ class Registration extends Component {
 
   render() {
     return (
-      <body class="registerbody">
+      <body className="registerbody">
       <form >
         <fieldset>
-            <h1 class="register-title">Welcome to Shoe-Dometer!</h1>
-          <div class="register-slogan">
-          <h3 class="register-title">Register Today!</h3>
+            <h1 className="register-title">Welcome to Shoe-Dometer!</h1>
+          <div className="register-slogan">
+          <h3 className="register-title">Register Today!</h3>
           </div>
 
-          <div class="register-line">
+          <div className="register-line">
               <hr/>
           </div>
 
           <div className="formgrid">
-            <div class="register-username">
-            <input class="register-username" onChange={this.handleFieldChange} type="userName"
+            <div className="register-username">
+            <input className="register-username" onChange={this.handleFieldChange} type="userName"
               id="userName"
               placeholder="User Name"
               required="" autoFocus="" />
             <label htmlFor="inputUserName"></label><br/><br/>
             </div>
 
-            <div class="register-password">
-            <input class="register-password" onChange={this.handleFieldChange} type="password"
+            <div className="register-password">
+            <input className="register-password" onChange={this.handleFieldChange} type="password"
               id="password"
               placeholder="Password"
               required="" />
             <label htmlFor="inputPassword"></label><br/><br/>
             </div>
 
-            <div class="register-confirm">
-            <input class="register-confirm" onChange={this.handleFieldChange} type="password"
+            <div className="register-confirm">
+            <input className="register-confirm" onChange={this.handleFieldChange} type="password"
               id="confirmPass"
               placeholder="Confirm Password"
               required="" />
@@ -96,8 +96,8 @@ class Registration extends Component {
             
 
           </div>
-          <div class="register-wrapper">
-            <button class="register-button" type="submit" disabled={this.state.loadingStatus} onClick={this.handleRegistration}>
+          <div className="register-wrapper">
+            <button className="register-button" type="submit" disabled={this.state.loadingStatus} onClick={this.handleRegistration}>
               Register
             </button>
           </div>

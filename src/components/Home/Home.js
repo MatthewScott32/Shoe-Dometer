@@ -5,27 +5,27 @@ class Home extends Component {
   render() {
     return (
       <>
-      <body class="homebody">
-      <div class="title">
+      <body className="homebody">
+      <div className="title">
         <h1>
           Welcome to Shoe-Dometer!
         </h1>
       </div>
-      <div class= "slogan">
+      <div className= "slogan">
         <h2>
             Tracking Your Miles While You Make Tracks
         </h2>
       </div>
 
-      <div class="homeline">
+      <div className="homeline">
         <hr/>
       </div>
-      {/* <div class="homebuttons">
-      <div class="homebutton1">
-        <div class="button" className="section-content" onClick={() => {this.props.history.push("/login")}}>Login</div>
+      {/* <div className="homebuttons">
+      <div className="homebutton1">
+        <div className="button" className="section-content" onClick={() => {this.props.history.push("/login")}}>Login</div>
       </div>
-      <div class="homebutton2">
-        <div class="button" className="section-content" onClick={() => {this.props.history.push("/register")}}>Register</div>
+      <div className="homebutton2">
+        <div className="button" className="section-content" onClick={() => {this.props.history.push("/register")}}>Register</div>
       </div>
       </div> */}
       </body>

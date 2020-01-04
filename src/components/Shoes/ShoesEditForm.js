@@ -82,11 +82,12 @@ class ShoesEditForm extends Component {
             render() {
                 return(
                     <>
-                    <form class="shoeeditform">
+                    <body className="shoeeditbody">
+                    <form className="shoeeditform">
                     <fieldset>
                    
                     <h3 htmlFor="brand">Brand</h3>
-                    <input class="shoeinput1" type="input" required
+                    <input className="shoeinput1" type="input" required
                     onChange={this.handleFieldChange}
                     id="brand"
                     value={this.state.brand}/>
@@ -95,7 +96,7 @@ class ShoesEditForm extends Component {
 
                     
                     <h3 htmlFor="model">Model</h3>
-                    <input class="shoeinput2"  type="input" required
+                    <input className="shoeinput2"  type="input" required
                     onChange={this.handleFieldChange}
                     id="model"
                     value={this.state.model}/>
@@ -103,7 +104,7 @@ class ShoesEditForm extends Component {
                    
 
                     <h3 htmlFor="size">Size</h3>
-                    <input class="shoeinput1" type="input" required 
+                    <input className="shoeinput1" type="input" required 
                     onChange={this.handleFieldChange}
                     id="size"
                     value={this.state.size}/>
@@ -111,42 +112,42 @@ class ShoesEditForm extends Component {
                     
 
                     <h3 htmlFor="dateOfPurchase">Date of Purchase</h3>
-                    <input class="shoeinput2" type="date" required 
+                    <input className="shoeinput2" type="date" required 
                     onChange={this.handleFieldChange}
                     id="dateOfPurchase"
                     value={this.state.dateOfPurchase}/>
                     {/* <hr/> */}
 
                     <h3 htmlFor="mileage">Mileage</h3>
-                    <input class="shoeinput1" type="number" required 
+                    <input className="shoeinput1" type="number" required 
                     onChange={this.handleFieldChange}
                     id="mileage"
                     value={this.state.mileage}/>
                     {/* <hr/> */}
 
                     <h3 htmlFor="injuries">Injuries</h3>
-                    <input class="shoeinput2" type="input" required 
+                    <input className="shoeinput2" type="input" required 
                     onChange={this.handleFieldChange}
                     id="injuries"
                     value={this.state.injuries}/>
                     {/* <hr/> */}
 
                     <h3 htmlFor="condition">Condition</h3>
-                    <input class="shoeinput1" type="input" required 
+                    <input className="shoeinput1" type="input" required 
                     onChange={this.handleFieldChange}
                     id="condition"
                     value={this.state.condition}/>
                     {/* <hr/> */}
 
                     <h3 htmlFor="trailRoadBoth">Trail, Road, Both</h3>
-                    <input class="shoeinput2" type="input" required 
+                    <input className="shoeinput2" type="input" required 
                     onChange={this.handleFieldChange}
                     id="trailRoadBoth"
                     value={this.state.trailRoadBoth}/>
                     {/* <hr/> */}
 
                     <h3 htmlFor="weight">Shoe Weight</h3>
-                    <input class="shoeinput1" type="input" required 
+                    <input className="shoeinput1" type="input" required 
                     onChange={this.handleFieldChange}
                     id="weight"
                     value={this.state.weight}/>
@@ -154,7 +155,7 @@ class ShoesEditForm extends Component {
                     
                     <div>
                     <h3 htmlFor="racesUsed">Races Used</h3>
-                    <input class="shoeinput2" type="input" required 
+                    <input className="shoeinput2" type="input" required 
                     onChange={this.handleFieldChange}
                     id="racesUsed"
                     value={this.state.racesUsed}/>
@@ -163,8 +164,8 @@ class ShoesEditForm extends Component {
                     </fieldset>
 
                     <div>
-                    <h3 htmlFor="current" class="currenttitle">Current</h3>
-                    <input class="checkbox1"  type="checkbox" required 
+                    <h3 htmlFor="current" className="currenttitle">Current</h3>
+                    <input className="checkbox1"  type="checkbox" required 
                     onChange={this.handleCheckbox}
                     id="current"
                     value={this.state.current}
@@ -173,11 +174,12 @@ class ShoesEditForm extends Component {
                     </div>
 
                     
-                    <div class="submitbutton"
+                    <div className="submitbutton"
                      disabled={this.state.loadingStatus}
                      onClick={this.updateExistingShoes}>
                      Submit</div>
                     </form>
+                    </body>
               </>
              );
            }

@@ -1,8 +1,5 @@
 .shoebody {
     background-image: url("./runningshoes.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -27,7 +24,7 @@
 
 .shoescontainercards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 50px;
 }

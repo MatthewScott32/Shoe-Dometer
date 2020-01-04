@@ -1,4 +1,10 @@
-
+.shoeeditbody {
+    background-image: url("./runningedit.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 .shoeeditform {
     width: 90%;

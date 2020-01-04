@@ -20,11 +20,11 @@ export default class ApplicationViews extends Component {
      return(
          <>
           <Route exact path="/home" render={props => {
-              if (this.props.isAuthenticated()) {
+            //   if (this.props.isAuthenticated()) {
                   return <Home {...props} />
-              } else {
-                  return <Redirect to="/login" />
-              }
+            //   } else {
+            //       return <Redirect to="/home" />
+            //   }
         }} 
         />
          <Route path="/login" render={props => {

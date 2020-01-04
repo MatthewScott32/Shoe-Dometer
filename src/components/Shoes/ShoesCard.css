@@ -5,8 +5,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    grid-template-rows: auto;
-    grid-gap: 20px;
+    justify-content: space-around;
     background: gray;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;

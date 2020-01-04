@@ -20,14 +20,14 @@ const useStyles = makeStyles({
         return(
             <Card className={classes.card}>
             <CardContent>
-                <div class="racecard">
+                <div className="racecard">
                   <div>
                     <p><strong>Name:</strong> {props.race.raceName}</p>
                     <p><strong>Location:</strong> {props.race.raceLocation}</p>
                     <p><strong>Date:</strong> {props.race.raceDate}</p>
-                    <div class="racebutton" onClick={() => {props.history.push(`/races/${props.race.id}`)}}>Details</div>
-                    <div class="racebutton" onClick={() => {props.history.push(`/races/${props.race.id}/edit`)}}>Edit</div>
-                    <div class="racebutton" onClick={() => props.deleteRaces(props.race.id)}>Delete</div>
+                    <div className="racebutton" onClick={() => {props.history.push(`/races/${props.race.id}`)}}>Details</div>
+                    <div className="racebutton" onClick={() => {props.history.push(`/races/${props.race.id}/edit`)}}>Edit</div>
+                    <div className="racebutton" onClick={() => props.deleteRaces(props.race.id)}>Delete</div>
                   </div>
                 </div>
                 </CardContent>

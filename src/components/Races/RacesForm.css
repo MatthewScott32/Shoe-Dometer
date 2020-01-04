@@ -1,0 +1,49 @@
+.raceformbody {
+    background-image: url("./raceform.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.raceform {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    background-color: gray;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    margin-top: 50px;
+    border: 20px solid white;
+}
+
+.raceformbutton {
+    text-align: center;
+    margin-bottom: 5px;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 5px;
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #60a3bc;
+    padding: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    width: 75px;
+    font-size: 15px;
+    border-radius: 50px;
+    max-height: 60px;
+    margin-left: 5px;
+}

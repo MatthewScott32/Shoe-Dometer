@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ShoesManager from '../../modules/ShoesManager';
 import { getUser } from '../../modules/Helpers';
-// import './ShoesForm.css'
+import './shoesform.css'
 
 class ShoesForm extends Component {
     
@@ -73,8 +73,9 @@ class ShoesForm extends Component {
     render() {
         return (
             <>
-            <div className="card">
-             <div className="card-body">
+            <body className="shoeformbody">
+            <div className="shoeform">
+             <div>
               <article id="newShoesForm"><h1>New Shoes</h1>
                 <section>
                     {/* <h3>Picture</h3>
@@ -102,10 +103,11 @@ class ShoesForm extends Component {
                     <h3>Current</h3>
                     <input type="checkbox" id="current" onChange={this.handleCheckbox} checked={this.state.current}/>
                 </section>
-                <button id="saveShoes" disabled={this.state.loadingStatus} onClick={this.constructNewShoes}>Save Pair</button>
+                <div className="shoeformbutton" id="saveShoes" disabled={this.state.loadingStatus} onClick={this.constructNewShoes}>Save Pair</div>
                </article>
               </div>
              </div>
+             </body>
                 </>
                 )
             }

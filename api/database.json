@@ -315,7 +315,7 @@
       "dateOfPurchase": "2019-12-31",
       "mileage": "5",
       "injuries": "blister",
-      "condition": "heel falling apart after 10 miles",
+      "condition": "toe blew out-10 miles",
       "trailRoadBoth": "trail",
       "weight": "light",
       "racesUsed": "Murray 5k",
@@ -350,6 +350,21 @@
       "racesUsed": "none",
       "current": false,
       "id": 21
+    },
+    {
+      "userId": 1,
+      "brand": "Brooks 2",
+      "model": "shoe",
+      "size": "11",
+      "dateOfPurchase": "2020-01-08",
+      "mileage": "5",
+      "injuries": "none",
+      "condition": "sole wore out after 30 miles",
+      "trailRoadBoth": " both",
+      "weight": "light",
+      "racesUsed": "none",
+      "current": false,
+      "id": 22
     }
   ],
   "races": [
@@ -417,7 +432,7 @@
       "raceTime": "24:00",
       "distance": "3.1",
       "placement": "4",
-      "shoeId": "17"
+      "shoeId": "19"
     },
     {
       "id": 13,
@@ -431,6 +446,7 @@
       "shoeId": 19
     },
     {
+      "id": 14,
       "userId": 1,
       "raceName": "Murray Race",
       "raceLocation": "Murray",
@@ -438,10 +454,10 @@
       "raceTime": "22:00",
       "distance": "3.1",
       "placement": "2",
-      "shoeId": 20,
-      "id": 14
+      "shoeId": "19"
     },
     {
+      "id": 15,
       "userId": 1,
       "raceName": "Chicago Race",
       "raceLocation": "Chicago",
@@ -449,8 +465,18 @@
       "raceTime": "22:00",
       "distance": "3.1",
       "placement": "4",
-      "shoeId": 21,
-      "id": 15
+      "shoeId": "21"
+    },
+    {
+      "id": 16,
+      "userId": 1,
+      "raceName": "St. Louis Race",
+      "raceLocation": "St. Louis",
+      "raceDate": "2020-01-01",
+      "raceTime": "24:30",
+      "distance": "3.1",
+      "placement": "8",
+      "shoeId": "21"
     }
   ]
 }
