@@ -154,6 +154,11 @@
       "userName": "Mitch",
       "password": "4321",
       "id": 31
+    },
+    {
+      "userName": "123@me",
+      "password": "123",
+      "id": 32
     }
   ],
   "shoes": [
@@ -289,7 +294,7 @@
       "trailRoadBoth": "road",
       "weight": "medium",
       "racesUsed": "none",
-      "current": true
+      "current": false
     },
     {
       "userId": 4,
@@ -313,13 +318,13 @@
       "model": "Shoes",
       "size": "9",
       "dateOfPurchase": "2019-12-31",
-      "mileage": "5",
+      "mileage": "7",
       "injuries": "blister",
       "condition": "toe blew out-10 miles",
       "trailRoadBoth": "trail",
       "weight": "light",
       "racesUsed": "Murray 5k",
-      "current": false
+      "current": true
     },
     {
       "userId": 1,
@@ -355,16 +360,31 @@
       "userId": 1,
       "brand": "Brooks 2",
       "model": "shoe",
-      "size": "11",
-      "dateOfPurchase": "2020-01-08",
-      "mileage": "5",
-      "injuries": "none",
-      "condition": "sole wore out after 30 miles",
-      "trailRoadBoth": " both",
+      "size": "9",
+      "dateOfPurchase": "2020-01-01",
+      "mileage": "10",
+      "injuries": "persistant blister",
+      "condition": "heel blew out after 9",
+      "trailRoadBoth": "both",
       "weight": "light",
       "racesUsed": "none",
       "current": false,
       "id": 22
+    },
+    {
+      "userId": 32,
+      "brand": "nike",
+      "model": "air force 1",
+      "size": "9 1/2",
+      "dateOfPurchase": "2020-01-03",
+      "mileage": "11",
+      "injuries": "lots",
+      "condition": "light",
+      "trailRoadBoth": "both",
+      "weight": "3",
+      "racesUsed": "nyc marathon",
+      "current": true,
+      "id": 23
     }
   ],
   "races": [
@@ -442,8 +462,8 @@
       "raceDate": "2020-01-01",
       "raceTime": "23:00",
       "distance": "3.1",
-      "placement": "1",
-      "shoeId": 19
+      "placement": "2",
+      "shoeId": "17"
     },
     {
       "id": 14,
@@ -470,13 +490,13 @@
     {
       "id": 16,
       "userId": 1,
-      "raceName": "St. Louis Race",
-      "raceLocation": "St. Louis",
+      "raceName": "LA Race",
+      "raceLocation": "L.A.",
       "raceDate": "2020-01-01",
-      "raceTime": "24:30",
+      "raceTime": "21:00",
       "distance": "3.1",
-      "placement": "8",
-      "shoeId": "21"
+      "placement": "1",
+      "shoeId": 21
     }
   ]
 }

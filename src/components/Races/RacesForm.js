@@ -78,6 +78,7 @@ class RacesForm extends Component {
                     <input type="input" id="distance" onChange={this.handleFieldChange}/>
                     <h3>Placement</h3>
                     <input type="number" id="placement" onChange={this.handleFieldChange}/><br/><br/>
+                    <h3>Shoes Used</h3>
                     <select type="select" id="shoeId" onChange={this.handleFieldChange}>
                         <option value="none">Select</option>
                         {this.state.shoeArray.map(shoe => {
