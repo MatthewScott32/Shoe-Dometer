@@ -415,15 +415,15 @@
       "shoeId": "17"
     },
     {
+      "id": 13,
       "userId": 1,
       "raceName": "Benton Race",
       "raceLocation": "Benton",
       "raceDate": "2020-01-01",
       "raceTime": "23:00",
       "distance": "3.1",
-      "placement": "4",
-      "shoeId": 19,
-      "id": 13
+      "placement": "1",
+      "shoeId": 19
     },
     {
       "userId": 1,
