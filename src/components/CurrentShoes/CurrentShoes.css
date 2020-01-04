@@ -1,19 +1,29 @@
+.currentshoebody {
+    background-image: url("./currentrunningshoe.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .currentshoecard {
     width: 90%;
     max-width: 300px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    /* background: gray; */
-    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
-    display: flex;
     flex-direction: column;
     min-height: 100%;
     text-align: center;
     margin-bottom: 10px;
     padding: 10px;
-    margin-top: 100px;
 
+}
+
+.noshoe {
+    color: white;
+}
+
+.invisibleline {
+    margin: 150px;
 }

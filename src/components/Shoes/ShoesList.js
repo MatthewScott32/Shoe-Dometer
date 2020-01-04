@@ -34,6 +34,7 @@ class ShoesList extends Component {
     render() {
     return(
         <React.Fragment>
+            <body class="shoebody">
           <div class="addshoebutton" onClick={() => {this.props.history.push("/shoes/new")}}>Add Shoes</div>
           <div className="shoescontainercards">
             {this.state.shoes.map(shoe =>
@@ -45,6 +46,7 @@ class ShoesList extends Component {
                />
                 )}
           </div>
+          </body>
         </React.Fragment>
     )
   }

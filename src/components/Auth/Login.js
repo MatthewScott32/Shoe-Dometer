@@ -39,6 +39,7 @@ class Login extends Component {
 
   render() {
     return (
+      <body class="loginbody">
       <form onSubmit={this.handleLogin}>
         <fieldset>
         <h1 class="login-title">Welcome to Shoe-Dometer!</h1>
@@ -78,6 +79,7 @@ class Login extends Component {
             </div>
         </fieldset>
       </form>
+      </body>
     )
   }
 

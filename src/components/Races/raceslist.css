@@ -1,3 +1,11 @@
+.racelistbody {
+    background-image: url("./race.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .racescontainercards {
     display: flex;
     justify-content: space-evenly;

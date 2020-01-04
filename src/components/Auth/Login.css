@@ -1,7 +1,17 @@
+.loginbody {
+    background-image: url("./beachrun.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 .login-title {
     text-align: center;
     text-decoration-style: wavy;
     margin-top: 10px;
+    color: white;
 }
 
 .login-subtitle {
@@ -49,6 +59,7 @@
     border: none;
     transition: all 0.4s ease 0s;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
 .login-line {

@@ -1,3 +1,11 @@
+.homebody {
+    background-image: url("./homerunnerimage.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .title {
     text-align: center;
     text-decoration-style: wavy;
@@ -13,10 +21,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .homebutton1 {
+    margin-bottom: 150px;
     margin-top: 100px;
     text-align: center;
     margin-right: 30px;
@@ -33,6 +42,7 @@
 }
 
 .homebutton2 {
+    margin-bottom: 150px;
     margin-top: 100px;
     text-align: center;
     margin-right: 15px;

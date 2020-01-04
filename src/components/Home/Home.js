@@ -5,6 +5,7 @@ class Home extends Component {
   render() {
     return (
       <>
+      <body class="homebody">
       <div class="title">
         <h1>
           Welcome to Shoe-Dometer!
@@ -15,6 +16,7 @@ class Home extends Component {
             Tracking Your Miles While You Make Tracks
         </h2>
       </div>
+
       <div class="line">
         <hr/>
       </div>
@@ -26,6 +28,7 @@ class Home extends Component {
         <div class="button" className="section-content" onClick={() => {this.props.history.push("/register")}}>Register</div>
       </div>
       </div>
+      </body>
       </>
     )
   }
