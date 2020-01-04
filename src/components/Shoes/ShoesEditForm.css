@@ -33,7 +33,6 @@
     line-height: inherit;
     transition: 0.3s ease;
     text-align: center;
-    float: right;
     margin-bottom: 10px;
 }
 
@@ -49,14 +48,10 @@
     line-height: inherit;
     transition: 0.3s ease;
     text-align: center;
-    float: right;
     margin-bottom: 10px;;
     
 }
 
-h3 {
-    float: left;
-}
 
 .submitbutton {
     text-align: center;
@@ -82,16 +77,8 @@ h3 {
 
 .checkbox1 {
     cursor: pointer;
-    margin-top: 60px;
+    margin-top: 20px;
     margin-right: 115px;
     float: right;
     margin-bottom: 0;
-}
-
-hr {
-    width: 90%;
-    max-width: 300px;
-    display: flex;
-    background-color:black;
-    float: right;
 }

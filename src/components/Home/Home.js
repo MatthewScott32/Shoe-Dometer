@@ -16,7 +16,7 @@ class Home extends Component {
         </h2>
       </div>
       <div class="line">
-       <hr/>
+        <hr/>
       </div>
       <div class="homebuttons">
       <div class="homebutton1">
