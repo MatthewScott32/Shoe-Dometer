@@ -17,17 +17,17 @@ class Home extends Component {
         </h2>
       </div>
 
-      <div class="line">
+      <div class="homeline">
         <hr/>
       </div>
-      <div class="homebuttons">
+      {/* <div class="homebuttons">
       <div class="homebutton1">
         <div class="button" className="section-content" onClick={() => {this.props.history.push("/login")}}>Login</div>
       </div>
       <div class="homebutton2">
         <div class="button" className="section-content" onClick={() => {this.props.history.push("/register")}}>Register</div>
       </div>
-      </div>
+      </div> */}
       </body>
       </>
     )

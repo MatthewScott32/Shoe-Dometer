@@ -28,7 +28,7 @@ class Login extends Component {
                     userName: this.state.userName,
                     password: this.state.password
                 })
-                this.props.history.push("/current-shoes");
+                this.props.history.push("/home");
             }
         })
         // no match warning

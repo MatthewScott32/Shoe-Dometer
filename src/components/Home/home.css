@@ -58,7 +58,7 @@
     cursor: pointer;
 }
 
-.line {
+.homeline {
     width: 50%; 
     margin: 0 25% 0 25%;
     margin-top: 150px;
@@ -70,4 +70,5 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
+    margin-top: 500px;
  }
