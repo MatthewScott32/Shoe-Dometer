@@ -146,7 +146,7 @@ class ShoesEditForm extends Component {
                     value={this.state.trailRoadBoth}/>
                     {/* <hr/> */}
 
-                    <h3 htmlFor="weight">Shoe Weight</h3>
+                    <h3 htmlFor="weight">Heavy ,Medium, Light</h3>
                     <input className="shoeinput1" type="input" required 
                     onChange={this.handleFieldChange}
                     id="weight"

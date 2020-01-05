@@ -159,6 +159,11 @@
       "userName": "123@me",
       "password": "123",
       "id": 32
+    },
+    {
+      "userName": "edahlgren",
+      "password": "Magootsa09",
+      "id": 33
     }
   ],
   "shoes": [
@@ -294,7 +299,7 @@
       "trailRoadBoth": "road",
       "weight": "medium",
       "racesUsed": "none",
-      "current": false
+      "current": true
     },
     {
       "userId": 4,
@@ -324,7 +329,7 @@
       "trailRoadBoth": "trail",
       "weight": "light",
       "racesUsed": "Murray 5k",
-      "current": true
+      "current": false
     },
     {
       "userId": 1,
@@ -385,6 +390,21 @@
       "racesUsed": "nyc marathon",
       "current": true,
       "id": 23
+    },
+    {
+      "id": 25,
+      "userId": 33,
+      "brand": "nike",
+      "model": "shoe",
+      "size": "9",
+      "dateOfPurchase": "2020-01-01",
+      "mileage": "2",
+      "injuries": "blister on left big toe",
+      "condition": "heel blew out-2 miles",
+      "trailRoadBoth": "roads",
+      "weight": "light",
+      "racesUsed": "none",
+      "current": true
     }
   ],
   "races": [
