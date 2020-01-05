@@ -23,15 +23,22 @@ class NavBar extends Component  {
             <NavItem>
             <NavLink className="nav-link" href="/races">Races</NavLink>
             </NavItem>
+            {(this.props.isAuthenticated())
+            ?
+            <NavItem>
+            <NavLink className="nav-link" onClick={this.handleLogout} href="/login">Logout</NavLink>
+            </NavItem>
+            :
+            <>
             <NavItem>
             <NavLink className="nav-link" href="/register">Registration</NavLink>
             </NavItem>
             <NavItem>
             <NavLink className="nav-link" href="/login">Login</NavLink>
             </NavItem>
-            <NavItem>
-            <NavLink className="nav-link" onClick={this.handleLogout} href="/login">Logout</NavLink>
-            </NavItem>
+            </>
+    }
+
         </Nav>
         </div>
     );

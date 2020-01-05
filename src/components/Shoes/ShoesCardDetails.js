@@ -57,7 +57,7 @@ render() {
                     <p><strong>Injuries:</strong> {this.state.shoe.injuries}</p>
                     <p><strong>Condition:</strong> {this.state.shoe.condition}</p>
                     <p><strong>Trail, Road or Both:</strong> {this.state.shoe.trailRoadBoth}</p>
-                    <p><strong>Shoe Weight:</strong> {this.state.shoe.weight}</p>
+                    <p><strong>Heavy, Medium, Light:</strong> {this.state.shoe.weight}</p>
                     <p><strong>Races Used:</strong> {this.state.shoe.racesUsed}</p>
                     <p><strong>Current:</strong> {this.state.currentShoe ? 'Wearing' : 'Closet' }</p>
                     <div className="shoebuttondetails1">

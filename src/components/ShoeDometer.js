@@ -47,7 +47,7 @@ class ShoeDometer extends Component {
     return (
       <React.Fragment>
 
-        <NavBar user={this.state.user} clearUser={this.clearUser} />       
+        <NavBar user={this.state.user} clearUser={this.clearUser} isAuthenticated={this.isAuthenticated} />       
         <ApplicationViews user={this.state.user}
                 setUser={this.setUser} 
                 isAuthenticated={this.isAuthenticated}/>
