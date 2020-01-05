@@ -18,19 +18,19 @@ export default function RacesCard(props) {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
   return (
-    // <Card>
+    <Card className={classes.card}>
       <CardContent>
-        <div className="racecard">
-          <div>
-            <p><strong>Name:</strong> {props.race.raceName}</p>
-            <p><strong>Location:</strong> {props.race.raceLocation}</p>
-            <p><strong>Date:</strong> {props.race.raceDate}</p>
-            <div className="racebutton" onClick={() => { props.history.push(`/races/${props.race.id}`) }}>Details</div>
-            <div className="racebutton" onClick={() => { props.history.push(`/races/${props.race.id}/edit`) }}>Edit</div>
-            <div className="racebutton" onClick={() => props.deleteRaces(props.race.id)}>Delete</div>
-          </div>
+    <div className="racecard">
+        <div>
+          <p><strong>Name:</strong> {props.race.raceName}</p>
+          <p><strong>Location:</strong> {props.race.raceLocation}</p>
+          <p><strong>Date:</strong> {props.race.raceDate}</p>
+          <div className="racebutton" onClick={() => { props.history.push(`/races/${props.race.id}`) }}>Details</div>
+          <div className="racebutton" onClick={() => { props.history.push(`/races/${props.race.id}/edit`) }}>Edit</div>
+          <div className="racebutton" onClick={() => props.deleteRaces(props.race.id)}>Delete</div>
         </div>
+    </div>
       </CardContent>
-    // </Card>
+    </Card>
   )
 }
