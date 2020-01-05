@@ -44,7 +44,7 @@
     margin-top: 25px;
 }
 
-.button{
+.loginbutton{
     display: flex;
     align-items: center;
     margin-top: 50px;
@@ -59,7 +59,7 @@
     border: none;
     transition: all 0.4s ease 0s;
     cursor: pointer;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .login-line {

@@ -47,9 +47,9 @@ class Login extends Component {
           <div className="login-slogan">
             <h3 className="login-title">Please sign in</h3>
           </div>
-            <div className="login-line">
+            {/* <div className="login-line">
               <hr/>
-            </div>
+            </div> */}
           
           <div className="username">
             <div className="login-subtitle">
@@ -74,7 +74,7 @@ class Login extends Component {
             </div>
 
             <div className="wrapper">
-              <div className="button" onClick={this.handleLogin }>
+              <div className="loginbutton" onClick={this.handleLogin }>
                   Sign in
               </div>
             </div>
