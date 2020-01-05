@@ -65,9 +65,9 @@ class Registration extends Component {
           <h3 className="register-title">Register Today!</h3>
           </div>
 
-          <div className="register-line">
+          {/* <div className="register-line">
               <hr/>
-          </div>
+          </div> */}
 
           <div className="formgrid">
             <div className="register-username">
