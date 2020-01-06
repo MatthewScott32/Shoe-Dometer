@@ -425,6 +425,21 @@
       "racesUsed": "none",
       "current": false,
       "id": 26
+    },
+    {
+      "userId": 1,
+      "brand": "Converse",
+      "model": "Shoe",
+      "size": "9",
+      "dateOfPurchase": "2020-01-01",
+      "mileage": "10",
+      "injuries": "none",
+      "condition": "heel blew out-10",
+      "trailRoadBoth": "Road",
+      "weight": "light",
+      "racesUsed": "none",
+      "current": false,
+      "id": 27
     }
   ],
   "races": [
