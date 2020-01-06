@@ -410,6 +410,21 @@
       "weight": "light",
       "racesUsed": "none",
       "current": true
+    },
+    {
+      "userId": 1,
+      "brand": "British Knights",
+      "model": "Shoe",
+      "size": "9",
+      "dateOfPurchase": "2020-01-05",
+      "mileage": "20",
+      "injuries": "none",
+      "condition": "laces broke right shoe",
+      "trailRoadBoth": "Road",
+      "weight": "Light",
+      "racesUsed": "none",
+      "current": false,
+      "id": 26
     }
   ],
   "races": [
@@ -522,6 +537,17 @@
       "distance": "3.1",
       "placement": "1",
       "shoeId": 21
+    },
+    {
+      "userId": 1,
+      "raceName": "Boston Marathon",
+      "raceLocation": "Boston",
+      "raceDate": "2020-01-02",
+      "raceTime": "2 hours",
+      "distance": "26.2",
+      "placement": "17",
+      "shoeId": 19,
+      "id": 17
     }
   ]
 }

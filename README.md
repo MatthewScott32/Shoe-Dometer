@@ -66,3 +66,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+ReadMe
+Shoe-Dometer:
+     -A dashboard application for organizing your running shoes and races
+
+Click this link:  https://github.com/MatthewScott32/Shoe-Dometer, Fork to your GitHub account,  Clone with SSH, Use a password protected SSH key.
+
+Create an account, click add shoe to create a shoe card, click add race to create a race card and choose what shoe from your shoe cards to use in your race card.
