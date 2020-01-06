@@ -92,7 +92,7 @@ class ShoesForm extends Component {
                     <input type="number" id="mileage" onChange={this.handleFieldChange}/>
                     <h3>Injuries</h3>
                     <input type="input" id="injuries" onChange={this.handleFieldChange}/>
-                    <h3>Condition with Miles</h3>
+                    <h3>Condition</h3>
                     <input type="input" id="condition" onChange={this.handleFieldChange}/>
                     <h3>Trail, Road, Both</h3>
                     <input type="input" id="trailRoadBoth" onChange={this.handleFieldChange}/>
